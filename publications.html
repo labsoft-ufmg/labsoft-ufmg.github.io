@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Labsoft - Laboratory of Software Engineering</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+
+		<style>
+			.accordion {
+			        margin-bottom: 20px;
+			    }
+
+			    .accordion-header {
+			        background-color: #f1f1f1;
+			        padding: 10px;
+			        cursor: pointer;
+			        display: flex;
+			        justify-content: center; /* Centralizar horizontalmente */
+			        align-items: center; /* Centralizar verticalmente */
+			    }
+
+			    .accordion-content {
+			        display: none;
+			        padding: 10px;
+			        background-color: #fff; /* Cor de fundo para o conteúdo do accordion */
+			    }
+
+			    .accordion.active .accordion-content {
+			        display: block;
+			    }
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><img src="images/logo.png"></a>
+									<ul class="icons">
+										<li><a href="https://twitter.com/labsoftufmg" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+										<li><a href="https://www.facebook.com/labsoft.dcc.ufmg.br" class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
+										<!--li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li-->
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Publications</h1>
+									</header>
+
+									<hr class="major" />
+
+									<p><i class="fa-solid fa-star"></i> Featured publications</p>
+
+									<div class="accordion active">
+										<h2><div class="accordion-header"><b>2023</b></div></h2>
+
+										<div class="accordion-content">
+										
+											<p>Kattiana Constantino, Fabiano Belem, Eduardo Figueiredo. <b><a href="https://doi.org/10.1002/spe.3194" target="_blank">Dual Analysis for Helping Developers to Find Collaborators Based on Co-Changed Files: An Empirical Study</a></b>. Software: Practice and Experience (SPE), 2023.</p>
+
+											<p><i class="fa-solid fa-star"></i> Gustavo Vale, Claus Hunsen, Eduardo Figueiredo, and Sven Apel. <b><a href="https://doi.org/10.1109/TSE.2021.3130098" target="blank">Challenges of Resolving Merge Conflicts: A Mining and Survey Study</a></b>. IEEE Transactions on Software Engineering (TSE), 2021.</p>
+										</div>
+									</div>
+
+									<div class="accordion">
+										<h2><div class="accordion-header"><b>2022</b></div></h2>
+
+										<div class="accordion-content">
+										
+											<p>Rodrigo Moreira, Wesley Assuncao, Jabier Martinez, and Eduardo Figueiredo. <b><a href="https://doi.org/10.1007/s10664-021-10104-3" target="blank">Open-Source Software Product Line Extraction Processes: the ArgoUML-SPL and Phaser Cases</a></b>. Empirical Software Engineering (EMSE), vol. 27, issue 4m 2022.</p>
+										</div>
+									</div>
+
+
+									<hr class="major" />
+
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Home</a></li>
+										<li><a href="members.html">Members</a></li>
+										<li><a href="seminars.html">Seminars</a></li>
+										<!--li><a href="elements.html">Publications</a></li-->
+										<!--li><a href="elements.html">Laboratory</a></li-->
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="#">labsoft@dcc.ufmg.br</a></li>
+										<li class="icon solid fa-phone">+55 31 3409-1474<br />
+										+55 31 3409-1475	
+										</li>
+										
+										<li class="icon solid fa-home">Antônio Carlos Avenue, 6627, Pampulha<br />
+										Belo Horizonte, Minas Gerais, Brazil <br />
+										Department of Computer Science, Room 2313</li>
+									</ul>
+								</section>
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+			  document.addEventListener('DOMContentLoaded', function() {
+			        const accordions = document.querySelectorAll('.accordion');
+
+			        accordions.forEach(accordion => {
+			            const header = accordion.querySelector('.accordion-header');
+
+			            header.addEventListener('click', () => {
+			                accordion.classList.toggle('active');
+			            });
+			        });
+			    });
+			</script>
+	</body>
+</html>
