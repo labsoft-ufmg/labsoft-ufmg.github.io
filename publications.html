@@ -5,481 +5,297 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>LabSoft - Software Engineering Laboratory</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
 
-		<style>
-			.accordion {
-			        margin-bottom: 20px;
-			    }
+<head>
+	<title>LabSoft - Software Engineering Laboratory</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+	<style>
+	.accordion {
+		margin-bottom: 20px;
+	}
+	
+	.accordion-header {
+		background-color: #f1f1f1;
+		padding: 10px;
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		/* Centralizar horizontalmente */
+		align-items: center;
+		/* Centralizar verticalmente */
+	}
+	
+	.accordion-content {
+		display: none;
+		padding: 10px;
+		background-color: #fff;
+		/* Cor de fundo para o conteúdo do accordion */
+	}
+	
+	.accordion.active .accordion-content {
+		display: block;
+	}
+	</style>
+</head>
 
-			    .accordion-header {
-			        background-color: #f1f1f1;
-			        padding: 10px;
-			        cursor: pointer;
-			        display: flex;
-			        justify-content: center; /* Centralizar horizontalmente */
-			        align-items: center; /* Centralizar verticalmente */
-			    }
-
-			    .accordion-content {
-			        display: none;
-			        padding: 10px;
-			        background-color: #fff; /* Cor de fundo para o conteúdo do accordion */
-			    }
-
-			    .accordion.active .accordion-content {
-			        display: block;
-			    }
-		</style>
-	</head>
-	<body class="is-preload">
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-
-							<!-- Header -->
-								<header id="header">
-									<a href="index.html" class="logo"><img src="images/logo.png"></a>
-									<ul class="icons">
-										<li><a href="https://twitter.com/labsoftufmg" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
-										<li><a href="https://www.facebook.com/labsoft.dcc.ufmg.br" class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
-										<!--li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+<body class="is-preload">
+	<!-- Wrapper -->
+	<div id="wrapper">
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+				<!-- Header -->
+				<header id="header">
+					<a href="index.html" class="logo"><img src="images/logo.png"></a>
+					<ul class="icons">
+						<li><a href="https://twitter.com/labsoftufmg" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/labsoft.dcc.ufmg.br" class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
+						<!--li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
 										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li-->
-									</ul>
-								</header>
-
-							<!-- Content -->
-								<section>
-									<header class="main">
-										<h1>Publications</h1>
-									</header>
-
-									<hr class="major" />
-
-									<p>
-									<i class="fa-solid fa-star"></i> Featured publications &emsp; <i class="fa-solid fa-newspaper"></i> Journal Papers &emsp; <i class="fa-solid fa-users"></i> Conference Papers &emsp; <i class="fa-solid fa-school"></i> WorkShop Papers &emsp; <br />
-									<i class="fa-solid fa-language"></i> Publications in Portuguese &emsp; <i class="fa-solid fa-gears"></i> Technical Reports &emsp; <i class="fa-solid fa-graduation-cap"></i> Final Course Projects </i>
-									</p>
-									
-									<div class="accordion active">
-										<h2><div class="accordion-header"><b>2024</b></div></h2>
-
-										<div class="accordion-content">
-											
-											<p><i class="fa-solid fa-users"></i> Amanda Santana, Eduardo Figueiredo, Juliana Alves Pereira <b>Unraveling the Impact of Code Smell Agglomerations on Code Stability</b>
-                       In proceedings of the 40th International Conference on Software Maintenance and Evolution (ICSME). Flagstaff, AZ, USA. 2024. <br/>
-											<a href="publications/2024/ICSME-2024-AmandaSantana - Preprint.pdf" class="button small">PDF</a>
-											</p>
-											
-											<p><i class="fa-solid fa-users"></i> Jefferson G. M. Lopes, Johnatan Oliveira, Eduardo Figueiredo <b>Evaluating the Impact of Developer Experience on Code Quality: A Systematic Literature Review</b>
-                       In proceedings of the 27th Ibero-American Conference on Software Engineering (CIbSE). Curitiba, 2024.<br/>
-											<a href="publications/2024/cibse2024lopes.pdf" class="button small">PDF</a>
-											</p>
-
-											<p><i class="fa-solid fa-newspaper"></i> Kattiana Constantino, Raquel Prates, and Eduardo Figueiredo. <b>A User Evaluation of a Collaborator Recommender based on Co-Changed Files</b>
-                        Journal on Interactive Systems (JIS 2024).<br/>
-											<a href="publications/2024/jis2024preprint.pdf" class="button small">PDF</a> <a href="https://doi.org/10.5753/jis.2024.3728" class="button small">DOI</a>
-											</p>
-										
-											<p><i class="fa-solid fa-users"></i> Henrique Nunes, Amanda Santana, Eduardo Figueiredo and Heitor Costa. <b>Tuning Code Smell Prediction Models: A Replication Study</b> 
-                        In proceedings of the 32nd International Conference on Program Comprehension (ICPC 2024). Lisbon, 2024.<br/>
-											<a href="publications/2024/icpc2024preprint.pdf" class="button small">PDF</a>
-											</p>
-
-											<p><i class="fa-solid fa-users"></i> Euler Marinho, Fischer Ferreira, Eduardo Fernandes, João P. Diniz, and Eduardo Figueiredo. <b>Resource Interaction Failures in Mobile Applications: A
-											Challenge for the Software Product Line Testing Community</b> 
-                        In proceedings of the 28th ACM International Systems and Software Product Line Conference (SPLC). Luxembourg, 2024.<br/>
-											<a href="publications/2024/splc2024preprint.pdf" class="button small">PDF</a>
-											</p>
-
-											<p><i class="fa-solid fa-users"></i> Euler Marinho, Izaias Pessoa Neto, Fischer Ferreira, Joao Paulo Diniz, and Eduardo Figueiredo. <b>RIFDiscoverer: A Tool For Finding Resource Interaction 
-												Failures in Mobile Application</b> 
-                        In proceedings of the 28th ACM International Systems and Software Product Line Conference (SPLC). Luxembourg, 2024.<br/>
-											<a href="publications/2024/splc2024tool.pdf" class="button small">PDF</a>
-											</p>
-
-											<p><i class="fa-solid fa-users"></i> Daniel Cruz, Amanda Santana, and Eduardo Figueiredo. <b>An Exploratory Evaluation of Continuous Feedback to Enhance Machine Learning Code Smell Detection</b> 
-                        In proceedings of the 27th Ibero-American Conference on Software Engineering (CIbSE). Curitiba, 2024.<br/>
-											<a href="publications/2024/cibse2024cruz.pdf" class="button small">PDF</a>
-											</p>
-
-											<p><i class="fa-solid fa-users"></i> Klayver Carmo, Fischer Ferreira, and Eduardo Figueiredo. <b>Performance Evaluation of Back-End Frameworks: A Comparative Study</b> 
-                        In proceedings of the Brazilian Symposium on Information Systems (SBSI). Juiz de Fora, 2024.<br/>
-											<a href="publications/2024/sbsi2024preprint.pdf" class="button small">PDF</a>
-											</p>
-											
-											<p><i class="fa-solid fa-users"></i> Amanda Santana, Eduardo Figueiredo, Juliana Alves Pereira, Alessandro Garcia. <b>An Exploratory Evaluation of Code Smell Agglomerations</b> 
-                        Software Quality Journal (SQJ). 2024. <br/>
-											<a href="publications/2024/SQJ2024Santana.pdf" class="button small">PDF</a>
-											</p>
-										</div>
-									</div>
-                  
-                  <div class="accordion active">
-										<h2><div class="accordion-header"><b>2023</b></div></h2>
-
-										<div class="accordion-content">
-										
-											<p><i class="fa-solid fa-newspaper"></i> Kattiana Constantino, Fabiano Belem, Eduardo Figueiredo. <b> Dual Analysis for Helping Developers to Find Collaborators Based on Co-Changed Files: An Empirical Study</b>. Software: Practice and Experience (SPE), 2023. <br />
-											<a href="publications/2023/spe2023preprint.pdf" class="button small">PDF</a> <a href="https://doi.org/10.1002/spe.3194" class="button small">DOI</a>
-											</p>
-
-											<p><i class="fa-solid fa-newspaper"></i> Thiago Nicolini, Andre Hora, Eduardo Figueiredo. <b> On the Usage of New JavaScript Features through Transpilers: The Babel Case.</b> IEEE Software, 2023. <br />
-											<a href="publications/2023/software2023preprint.pdf" class="button small">PDF</a>  <a href="https://doi.org/10.1109/MS.2023.3243858" class="button small">DOI</a>
-											</p>
-											
-											<p><i class="fa-solid fa-newspaper"></i> Euler Marinho, Fischer Ferreira, Joao Paulo Diniz, and Eduardo Figueiredo.<b> Evaluating Testing Strategies for Resource related Failures in Mobile Applications.</b> Software Quality Journal (SQJ), 2023. <br />
-											<a href="publications/2023/sqj2023preprint.pdf" class="button small">PDF</a>  <a href="https://doi.org/10.1007/s11219-023-09627-3" class="button small">DOI</a>
-											</p>
-
-											<p><i class="fa-solid fa-users"></i> Geanderson Santos, Amanda Santana, Gustavo Vale, and Eduardo Figueiredo.<b> Yet Another Model! A Study on Model's Similarities for Defect and Code Smells.</b> In proceedings of the 26th International Conference on Fundamental Approaches to Software Engineering (FASE), LNCS, volume 13991. Paris, 2023. <br />
-											<a href="publications/2023/fase2023preprint.pdf" class="button small">PDF</a>  <a href="https://doi.org/10.1007/978-3-031-30826-0_16" class="button small">DOI</a>
-											</p>
-
-											<p><i class="fa-solid fa-users"></i> Joao Paulo Diniz, Fischer Ferreira, Fabiano Ferrari, and Eduardo Figueiredo.<b> Are the Mutations of Strongly Subsuming Second-Order Mutants Actually Masking Each Other?.</b> In proceedings of the 34th IEEE International Symposium on Software Reliability Engineering (ISSRE), Florence, 2023. <br />
-											<a href="publications/2023/issre2023preprint.pdf" class="button small">PDF</a>
-											</p>
-
-											<p><i class="fa-solid fa-users"></i> Gustavo Vale, Eduardo Fernandes, Eduardo Figueiredo, and Sven Apel.<b> Behind Developer Contributions on Conflicting Merge Scenarios.</b> In proceedings of the 23rd IEEE International Working Conference on Source Code Analysis and Manipulation (SCAM), Bogota, 2023. <br />
-											<a href="publications/2023/scam2023preprint.pdf" class="button small">PDF</a>
-											</p>
-
-											<p><i class="fa-solid fa-users"></i> Kattiana Constantino, Raquel Prates, and Eduardo Figueiredo.<b> Recommending Collaborators Based on Co-Changed Files: A Controlled Experiment.</b> In proceedings of the Brazilian Symposium on Collaborative Systems (SBSC), pp. 154-168, Rio de Janeiro, 2023. <br />
-											<a href="publications/2023/sbsc2023preprint.pdf" class="button small">PDF</a> <a href="https://doi.org/10.5753/sbsc.2023.229104" class="button small">DOI</a>
-											</p>
-
-											<p><i class="fa-solid fa-users"></i> Euler Marinho, Fischer Ferreira, Joao Paulo Diniz, Fischer Ferreira, and Eduardo Figueiredo.<b> Applying Spectrum-Based Fault Localization to Android Applications.</b> In proceedings of the Brazilian Symposium on Software Engineering Software (SBES), Campo Grande, 2023. <br />
-											<a href="publications/2023/sbes2023preprint.pdf" class="button small">PDF</a>
-											</p>
-											
-											<p><i class="fa-solid fa-school"></i> Kattiana Constantino and Eduardo Figueiredo.<b> Finding Collaborations based on Co-Changed Files.</b> In proceedings of the Master and PhD Contest on Collaborative Systems (CTDSC), co-allocated with SBSC. Rio de Janeiro, 2023. <br />
-											<a href="publications/2023/ctdsc2023preprint.pdf" class="button small">PDF</a>
-											</p>
-										</div>
-									</div>
-
-									<div class="accordion">
-										<h2><div class="accordion-header"><b>2022</b></div></h2>
-
-										<div class="accordion-content">
-										
-											<p><i class="fa-solid fa-newspaper"></i> Rodrigo Moreira, Eduardo Fernandes, and Eduardo Figueiredo. <b><a href="https://hillside.net/plop/2022/papers/G4_P3.pdf" target="blank">Review-based Comparison of Design Pattern Detection Tools</a></b>. In proceedings of the International Conference on Pattern Languages of Programs (PLoP), SugarLoaf Track, Virtual, 2022.</p>
-											
-											<p><i class="fa-solid fa-newspaper"></i> Rodrigo Moreira, Wesley Assuncao, Jabier Martinez, and Eduardo Figueiredo. <b><a href="https://doi.org/10.1007/s10664-021-10104-3" target="blank">Open-Source Software Product Line Extraction Processes: the ArgoUML-SPL and Phaser Cases</a></b>. Empirical Software Engineering (EMSE), vol. 27, issue 4m 2022.</p>
-
-											<p><i class="fa-solid fa-newspaper"></i> Romulo Nascimento, Eduardo Figueiredo, and Andre Hora.<b><a href="https://doi.org/10.1109/MS.2021.3103134" target="blank"> JavaScript API Deprecation Landscape: A Survey and Mining Study</a></b>. IEEE Software, vol. 39, issue 3, 2022.</p>
-
-											<p><i class="fa-solid fa-users"></i> Romulo Nascimento, Eduardo Figueiredo, and Andre Hora.<b><a href="https://doi.org/10.1109/SANER53432.2022.00031" target="blank"> Exploring API Deprecation Evolution in JavaScript.</a></b> In proceedings of the IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER), Honolulu, Hawaii, 2022.</p>
-
-											<p><i class="fa-solid fa-users"></i> Kattiana Constantino and Eduardo Figueiredo.<b><a href="#" target="blank"> CoopFinder: Finding Collaborators Based on Co-Changed Files.</a></b> In proceedings of the IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC), Poster and Showpiece Track, Rome, Italy, 2022.</p>
-
-											<p><i class="fa-solid fa-users"></i> Denis Pinheiro, Johnatan Oliveira, and Eduardo Figueiredo.<b><a href="https://www.conf-micro.services/2022/papers/paper_11.pdf" target="blank"> Microservice Smells and Automated Detection Tools: A Systematic Literature Review.</a></b> In proceedings of the International Conference on Microservices (Microservices), Paris, France, 2022.</p>
-
-											<p><i class="fa-solid fa-users"></i> Geanderson Santos, Adriano Veloso, and Eduardo Figueiredo.<b><a href="https://doi.org/10.5220/0011045700003176" target="blank"> The Subtle Art of Digging for Defects: Analyzing Features for Defect Prediction in Java Projects.</a></b> In proceedings of the International Conference on Evaluation of Novel Approaches to Software Engineering (ENASE), Online, 2022.</p>
-
-											<p><i class="fa-solid fa-users"></i> Johnatan Oliveira, Matheus Flauzino, Mauricio Souza, Rafael Durelli, and Eduardo Figueiredo.<b><a href="https://doi.org/10.1007/978-3-031-14179-9_11" target="blank"> Can Source Code Analysis Indicate Programming Skills? A Survey with Developers.</a></b> In proceedings of the 15th International Conference on the Quality of Information and Communications Technology (QUATIC), Talavera de la Reina, Spain, 2022. [ ] best paper</p>
-
-											<p><i class="fa-solid fa-users"></i> Geanderson Santos, Adriano Veloso, and Eduardo Figueiredo.<b><a href="#" target="blank"> Understanding Thresholds of Software Features for Defect Prediction.</a></b> In proceedings of the Brazilian Symposium on Software Engineering (SBES), Insightful Ideas and Emerging Results Track, Uberlandia, 2022.</p>
-
-											<p><i class="fa-solid fa-users"></i> Jefferson Lopes, Johnatan Oliveira, and Eduardo Figueiredo.<b><a href="https://doi.org/10.1145/3555228.3555277" target="blank"> EXTRACTPRO: A Data Mining Tool for Developer Profile Generation based on Source Code Analysis.</a></b> In proceedings of the Brazilian Symposium on Software Engineering (SBES), Tools Track, Uberlandia, 2022.</p>	
-										</div>
-									</div>
-									
-									<div class="accordion">
-										<h2><div class="accordion-header"><b>2021</b></div></h2>
-
-										<div class="accordion-content">
-										
-											<p><i class="fa-solid fa-star"></i> <i class="fa-solid fa-newspaper"></i> Gustavo Vale, Claus Hunsen, Eduardo Figueiredo, and Sven Apel. <b><a href="https://doi.org/10.1109/TSE.2021.3130098" target="blank">Challenges of Resolving Merge Conflicts: A Mining and Survey Study</a></b>. IEEE Transactions on Software Engineering (TSE), 2021.</p>
-
-											<p><i class="fa-solid fa-newspaper"></i> Fischer Ferreira, Gustavo Vale, Joao Paulo Diniz, and Eduardo Figueiredo.<b><a href="https://doi.org/10.1016/j.jss.2021.110990" target="blank"> Evaluating T-wise Testing Strategies in a Community-wide Dataset of Configurable Software Systems.</a></b> Journal of Systems and Software (JSS), v. 179, 2021.</p>
-
-											<p><i class="fa-solid fa-newspaper"></i> Kattiana Constantino, Mauricio Souza, Shurui Zhou, Eduardo Figueiredo, and Christian Kastner.<b><a href="https://doi.org/10.1002/smr.2393" target="blank"> Perceptions of Open-Source Software Developers on Collaborations: An Interview and Survey Study.</a></b> Journal of Software: Evolution and Process (JSEP), Volume 35, Issue 5, 2021.</p>
-
-											<p><i class="fa-solid fa-newspaper"></i> Johnatan Oliveira, Markos Viggiato, Denis Pinheiro, and Eduardo Figueiredo.<b><a href="https://doi.org/10.5753/jserd.2021.548" target="blank"> Mining Experts from Source Code Analysis: An Empirical Evaluation.</a></b> Journal of Software Engineering Research and Development (JSERD), 2021.</p>
-											
-											<p><i class="fa-solid fa-users"></i> Joao Paulo Diniz, Chu-Pan Wong, Christian Kastner, and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.1109/ICST49551.2021.00028" target="blank"> Dissecting Strongly Subsuming Second-Order Mutants.</a></b> In proceedings of the International Conference on Software Testing, Verification and Validation (ICST), Porto de Galinhas, Brazil, 2021.</p>
-
-											<p><i class="fa-solid fa-users"></i> Amanda Santana, Daniel Cruz, and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.1145/3412841.3442003" target="blank"> An Exploratory Study on the Identification and Evaluation of Bad Smell Agglomerations.</a></b> In proceedings of the 36th Symposium On Applied Computing (ACM SAC), Gwangju, South Korea, 2021. [ ] best paper</p>
-
-											<p><i class="fa-solid fa-users"></i> Igor Pereira, Eduardo Figueiredo, and Tiago Carneiro.<b><a href="http://dx.doi.org/10.1145/3412841.3442126" target="blank"> A Systematic Review on the Use of DevOps in Internet of Things Software Systems.</a></b> In proceedings of the 36th Symposium On Applied Computing (ACM SAC), Gwangju, South Korea, 2021.</p>
-
-											<p><i class="fa-solid fa-users"></i> Euler Marinho, Joao Paulo Diniz, Fischer Ferreira, and Eduardo Figueiredo.<b><a href="#" target="blank"> Evaluating Sensor Interaction Failures in Mobile Applications.</a></b> In proceedings of the International Conference on the Quality of Information and Communications Technology (QUATIC), Faro, Portugal, 2021.</p>
-
-											<p><i class="fa-solid fa-users"></i> Fischer Ferreira, Joao Paulo Diniz, Gustavo Vale, and Eduardo Figueiredo.<b><a href="#" target="blank"> On the Challenges for Creating a Test Suite for Configurable Software Systems.</a></b> In proceedings of the 24th Iberoamerican Conference on Software Engineering (CIbSE), Software Engineering Track, San Jose, Costa Rica, 2021.</p>
-
-											<p><i class="fa-solid fa-users"></i> Igor Pereira, Tiago Carneiro, and Eduardo Figueiredo.<b><a href="https://doi.org/10.1145/3474624.3474630" target="blank"> Main Differences with DevOps on IoT Systems.</a></b> In proceedings of the Brazilian Symposium on Software Engineering (SBES), Joinville, 2021.</p>
-
-											<p><i class="fa-solid fa-users"></i> Igor Pereira, Tiago Carneiro, and Eduardo Figueiredo.<b><a href="https://doi.org/10.1145/3493244.3493261" target="blank"> Investigating Continuous Delivery on IoT Systems.</a></b> In proceedings of the Brazilian Symposium on Software Quality (SBQS), Vitoria, 2021.</p>
-
-											<p><i class="fa-solid fa-school"></i> Igor Pereira, Tiago Carneiro, and Eduardo Figueiredo.<b><a href="https://doi.org/10.48550/arXiv.2104.10147" target="blank"> Understanding the context of IoT software systems in DevOps.</a></b> In proceedings of the 3rd International Workshop on Software Engineering Research & Practices for the Internet of Things (SERP4IoT), co-allocated with ICSE. Madrid, Spain, 2021. </p>
-
-											<p><i class="fa-solid fa-school"></i> Denis Pinheiro, Eduardo Figueiredo.<b><a href="https://doi.org/10.5753/sbqs_estendido.2021.18555" target="blank"> Microservices Bad Smells and Automated Detection Tools.</a></b> In proceedings of the Master and PhD Workshop on Software Quality (WTDQS), co-allocated with SBQS. Vitoria, 2021.</p>
-
-										</div>
-										
-									</div>
-
-									<div class="accordion">
-										<h2><div class="accordion-header"><b>2020</b></div></h2>
-
-										<div class="accordion-content">
-
-											<p><i class="fa-solid fa-newspaper"></i> Geanderson Esteves, Eduardo Figueiredo, Adriano Veloso, Markos Viggiato, and Nivio Ziviani.<b><a href="https://link.springer.com/article/10.1007/s10515-020-00277-4" target="blank"> Understanding Machine Learning Software Defect Predictions.</a></b> Automated Software Engineering - An International Journal (ASEJ), 2020.</p>
-
-											<p><i class="fa-solid fa-star"></i> <i class="fa-solid fa-users"></i> Chu-Pan Wong, Jens Meinicke, Leo Chen, Joao Paulo Diniz, Christian Kastner, and Eduardo Figueiredo.<b><a href="https://https://doi.org/10.48550/arXiv.2004.02000" target="blank"> Efficiently Finding Higher-Order Mutants.</a></b> In proceedings of the Symposium on the Foundations of Software Engineering (FSE), Sacramento, USA, 2020.</p>
-
-											<p><i class="fa-solid fa-users"></i> Kattiana Constantino, Shurui Zhou, Mauricio Souza, Eduardo Figueiredo, and Christian Kï¿½stner.<b><a href="https://www.cs.cmu.edu/~ckaestne/pdf/icgse20.pdf" target="blank"> Understanding Collaborative Software Development: An Interview Study.</a></b> In proceedings of the 15th International Conference on Global Software Engineering (ICGSE), Seoul, South Korea, 2020.</p>
-
-											<p><i class="fa-solid fa-users"></i> Geanderson dos Santos and Eduardo Figueiredo.<b><a href="#" target="blank"> The Failure of One, the Fall of Many: An Exploratory Study of Software Features for Defect Prediction.</a></b> In proceedings of the 20th International Working Conference on Source Code Analysis and Manipulation (SCAM), Adelaide, Australia, 27 - 28 September 2020.</p>
-
-											<p><i class="fa-solid fa-users"></i> Fischer Ferreira, Gustavo Vale, Eduardo Figueiredo, and Joao Paulo Diniz.<b><a href="http://dx.doi.org/10.1145/3377024.3377045" target="blank"> On the Proposal and Evaluation of a Test-enriched Dataset for Configurable Software Systems.</a></b> In proceedings of the 13th International Working Conference on Variability Modelling of Software-Intensive Systems (VAMOS), Magdeburg, Germany, 5 - 7 February 2020.</p>
-
-											<p><i class="fa-solid fa-users"></i> Daniel Cruz, Eduardo Figueiredo, and Amanda Santana.<b><a href="http://dx.doi.org/10.1145/3387906.3388618" target="blank"> Detecting Bad Smells with Machine Learning Algorithms: an Empirical Study.</a></b> In proceedings of the International Conference on Technical Debt (TechDebt), Seoul, South Korea, 2020.</p>
-
-											<p><i class="fa-solid fa-users"></i> Romulo Nascimento, Aline Brito, Andre Hora, and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.1109/SANER48275.2020.9054854" target="blank"> JavaScript API Deprecation in the Wild: A First Assessment.</a></b> In proceedings of the 27th International Conference on Software Analysis, Evolution, and Reengineering (SANER), Early Research Achievements (ERA) Track, London, Canada, 18 - 21 February 2020.</p>
-
-											<p><i class="fa-solid fa-users"></i> Joao Paulo Diniz, Daniel Cruz, Fabio Ferreira, Cleiton Silva, and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.1109/SCAM51674.2020.00033" target="blank"> GitHub Label Embeddings.</a></b> In proceedings of the 20th International Working Conference on Source Code Analysis and Manipulation (SCAM), New Ideas and Emerging Results (NIER) Track, Adelaide, Australia, 27 - 28 September 2020. </p>
-
-											<p><i class="fa-solid fa-users"></i> Jabier Martinez, Daniele Wolfart, Wesley Assuncao, and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.1145/3382025.3414971" target="blank"> Insights on Software Product Line Extraction Processes: ArgoUML to ArgoUML SPL Revisited.</a></b> In proceedings of the International Systems and Software Product Line Conference (SPLC), Short Papers Track, Montreal, Canada, October 2020.</p>
-
-											<p><i class="fa-solid fa-users"></i> Fischer Ferreira, Markos Viggiato, Maurï¿½cio Souza, and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.1145/3382025.3414725" target="blank"> Testing Configurable Software Systems: The Failure Observation Challenge.</a></b> In proceedings of the International Systems and Software Product Line Conference (SPLC), Challenge Track, Montreal, Canada, October 2020.</p>
-
-											<p><i class="fa-solid fa-users"></i> Fischer Ferreira, Eduardo Fernandes, Johnatan Oliveira, Mauricio Souza, and Eduardo Figueiredo.<b><a href="https://www.researchgate.net/publication/350084819_How_Difficult_and_Effective_is_Writing_Assertions_for_Observing_Bugs_at_Runtime" target="blank"> How Difficult and Effective is Writing Assertions for Observing Bugs at Runtime?</a></b> In proceedings of the 23rd Iberoamerican Conference on Software Engineering (CIbSE), Experimental Software Engineering Track (ESELAW), Curitiba, Brazil, 2020. </p>
-
-											<p><i class="fa-solid fa-users"></i> Cleiton Silva, Amanda Santana, Eduardo Figueiredo, and Mariza Bigonha.<b><a href="http://cibse2020.ppgia.pucpr.br/images/artigos/12/S12_P1.pdf" target="blank"> Revisiting the Bad Smell and Refactoring Relationship: A Systematic Literature Review.</a></b> In proceedings of the 23rd Iberoamerican Conference on Software Engineering (CIbSE), Experimental Software Engineering Track (ESELAW), Curitiba, Brazil, 2020.</p>
-
-											<p><i class="fa-solid fa-users"></i> Geanderson Santos and Eduardo Figueiredo.<b><a href="http://cibse2020.ppgia.pucpr.br/images/artigos/4/S04_P1.pdf" target="blank"> Commit Classification using Natural Language Processing: Experiments over Labeled Datasets.</a></b> In proceedings of the 23rd Iberoamerican Conference on Software Engineering (CIbSE), Experimental Software Engineering Track (ESELAW), Curitiba, Brazil, 2020. </p>
-
-											<p><i class="fa-solid fa-users"></i> Cleiton Tavares, Eduardo Figueiredo, and Mariza Bigonha.<b><a href="http://dx.doi.org/10.1145/3422392.3422408" target="blank"> Analyzing the Impact of Refactoring on Bad Smells.</a></b> In proceedings of the Brazilian Symposium on Software Engineering (SBES), Natal, 19 - 23 October 2020.</p>
-
-											<p><i class="fa-solid fa-users"></i> Geanderson Santos, Eduardo Figueiredo, Adriano Veloso, Markos Viggiato, and Nivio Ziviani.<b><a href="http://dx.doi.org/10.1145/3439961.3439979" target="blank"> Predicting Software Defects with Explainable Machine Learning.</a></b> In proceedings of the Brazilian Symposium on Software Quality (SBQS), Manaus, 1 - 4 December 2020.</p>
-
-											<p><i class="fa-solid fa-users"></i> Johnatan Oliveira, Denis Pinheiro, and Eduardo Figueiredo.<b><a href="https://doi.org/10.1145/3422392.3422500" target="blank"> JExpert: A Tool for Library Expert Identification.</a></b> In proceedings of the Brazilian Symposium on Software Engineering (SBES), Tools Track, Natal, 19 - 23 October 2020.</p>
-
-											<p><i class="fa-solid fa-users"></i> Euler Marinho and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.1145/3422392.3422508" target="blank"> PLATOOL: A Functional Test Generation Tool for Mobile Applications.</a></b> In proceedings of the Brazilian Symposium on Software Engineering (SBES), Tools Track, Natal, 19 - 23 October 2020.</p>
-
-											<p><i class="fa-solid fa-school"></i> Fischer Ferreira and Eduardo Figueiredo.<b><a href="https://cibse2020.ppgia.pucpr.br/images/artigos/17/S17_P3.pdf" target="blank"> A Test Strategy for Configurable Software Systems Using Machine Learning.</a></b> In proceedings of the 23rd Iberoamerican Conference on Software Engineering (CIbSE), Doctoral Symposium, Curitiba, Brazil, 2020.</p>
-
-											<p><i class="fa-solid fa-school"></i> Cleiton Tavares, Mariza Bigonha, and Eduardo Figueiredo.<b><a href="https://doi.org/10.5753/cbsoft_estendido.2020.14615" target="blank"> Quantifying the Effects of Refactorings on Bad Smells.</a></b> In proceedings of the Master and PhD Workshop on Software Engineering (WTDSoft), co-allocated with CBSoft. Natal, 19 - 23 October 2020.</p>
-
-											<p><i class="fa-solid fa-school"></i> Romulo Nascimento, Eduardo Figueiredo, and Andre Hora.<b><a href="https://sol.sbc.org.br/index.php/cbsoft_estendido/article/download/14616/14461/" target="blank"> Assessing JavaScript API Deprecation.</a></b> In proceedings of the Master and PhD Workshop on Software Engineering (WTDSoft), co-allocated with CBSoft. Natal, 19 - 23 October 2020.</p>
-
-										</div>
-									</div>
-
-									<div class="accordion">
-										<h2><div class="accordion-header"><b>2019</b></div></h2>
-
-										<div class="accordion-content">
-
-											<p><i class="fa-solid fa-newspaper"></i> Gustavo Vale, Eduardo Fernandes, and Eduardo Figueiredo.<b><a href="https://doi.org/10.1007/s11219-018-9405-y" target="blank"> On the Proposal and Evaluation of a Benchmark-based Threshold Derivation Method.</a></b> Software Quality Journal (SQJ), vol. 27, pp. 275ï¿½306, 2019.</p>
-
-											<p><i class="fa-solid fa-newspaper"></i> Adriano Santos, Mauricio Souza, Marcella Dayrell, and Eduardo Figueiredo.<b><a href="https://doi.org/10.1007/978-3-030-21151-6_17" target="blank"> A Systematic Mapping Study on Game Elements and Serious Games for Learning Programming.</a></b> Communications in Computer and Information Science (CCIS), volume 1022, 2019.</p>
-
-											<p><i class="fa-solid fa-users"></i> Markos Viggiato, Johnatan Oliveira, Eduardo Figueiredo, Pooyan Jamshidi, and Christian Kastner.<b><a href="http://dx.doi.org/10.1109/ICGSE.2019.00013" target="blank"> Understanding Similarities and Differences in Software Development Practices Across Domains.</a></b> In proceedings of the 14th ACM/IEEE International Conference on Global Software Engineering (ICGSE), Montreal, Canada, 24 - 26 May 2019. [ Acceptance rate: 26 % ]</p>
-
-											<p><i class="fa-solid fa-users"></i> Fischer Ferreira, João Paulo Diniz, Cleiton Tavares, and Eduardo Figueiredo.<b><a href="#" target="blank"> Testing Tools for Configurable Software Systems: A Review-based Empirical Study.</a></b> In proceedings of the 13th International Workshop on Variability Modelling of Software-Intensive Systems (VAMOS), Leuven, Belgium, 6 - 8 February 2019.</p>
-
-											<p><i class="fa-solid fa-users"></i> Daniel Cruz, Eduardo Figueiredo, and Jabier Martinez.<b><a href="http://dx.doi.org/10.1145/3302333.3302343" target="blank"> A Literature Review and Comparison of Three Feature Location Techniques using ArgoUML-SPL.</a></b> In proceedings of the 13th International Workshop on Variability Modelling of Software-Intensive Systems (VAMOS), Leuven, Belgium, 6 - 8 February 2019.</p>
-
-											<p><i class="fa-solid fa-users"></i> Markos Viggiato, Johnatan Oliveira, Eduardo Figueiredo, Pooyan Jamshidi, and Christian Kastner.<b><a href="http://dx.doi.org/10.1109/ICSME.2019.00033" target="blank"> How Do Code Changes Evolve in Different Platforms? A Mining-based Investigation.</a></b> In proceedings of the 35th IEEE International Conference on Software Maintenance and Evolution (ICSME), Short Papers Track, Cleveland, USA, 30 Sep - 04 Oct 2019.</p>
-
-											<p><i class="fa-solid fa-users"></i> Allan Mori, Gustavo Vale, Elder Cirilo, and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.1145/3330204.3330252" target="blank"> A Domain-Sensitive Threshold Derivation Method.</a></b> In proceedings of the Brazilian Symposium on Information Systems (SBSI), Aracaju, 20 - 24 May 2019.</p>
-
-											<p><i class="fa-solid fa-users"></i> Mauricio Souza, Renata Moreira, and Eduardo Figueiredo.<b><a href="https://doi.org/10.1145/3350768.3352457" target="blank"> Students Perception on the Use of Project-Based Learning in Software Engineering Education.</a></b> In proceedings of the Brazilian Symposium on Software Engineering (SBES), Education Track, Salvador, 23-27 September 2019.</p>
-
-											<p><i class="fa-solid fa-users"></i> Hoyama Santos, Vinicius Durelli, Mauricio Souza, Eduardo Figueiredo, Lucas Silva, and Rafael Durelli.<b><a href="https://doi.org/10.1145/3350768.3352490" target="blank"> CleanGame: Gamifying the Identification of Code Smells.</a></b> In proceedings of the Brazilian Symposium on Software Engineering (SBES), Education Track, Salvador, 23-27 September 2019.</p>
-
-											<p><i class="fa-solid fa-users"></i> Johnatan Oliveira, Markos Viggiato, and Eduardo Figueiredo.<b><a href="https://doi.org/10.1145/3364641.3364648" target="blank"> How Well Do You Know This Library? Mining Experts from Source Code Analysis.</a></b> In proceedings of the Brazilian Symposium on Software Quality (SBQS), Fortaleza, 28 October - 1 November 2019.</p>
-
-											<p><i class="fa-solid fa-users"></i> Danilo Favato, Daniel Ishitani, Johnatan Oliveira, Eduardo Figueiredo.<b><a href="https://doi.org/10.1145/3364641.3364650" target="blank">  Linus's Law: More Eyes Fewer Flaws in Open Source Projects.</a></b> In proceedings of the Brazilian Symposium on Software Quality (SBQS), Fortaleza, 28 October - 1 November 2019.</p>
-
-											<p><i class="fa-solid fa-school"></i> Mauricio Souza, Renata Moreira, and Eduardo Figueiredo.<b><a href="https://doi.org/10.5753/wei.2019.6618" target="blank"> Playing the Project: Incorporating Gamification into PBL Approaches for Software Engineering Education.</a></b> In proceedings of the 27th Brazilian Workshop on Computing Education (WEI), Belem, 14-18 July 2019.</p>
-
-											<p><i class="fa-solid fa-school"></i> Amanda Santana and Eduardo Figueiredo.<b><a href="https://doi.org/10.5753/cbsoft_estendido.2019.7653" target="blank"> On the Impact of Bad Smell Agglomerations on Software Quality.</a></b> In proceedings of the Master and PhD Workshop on Software Engineering (WTDSoft), co-allocated with CBSoft. Salvador, 23 - 27 September 2019.</p>
-
-
-										</div>
-									</div>
-
-									<div class="accordion">
-										<h2><div class="accordion-header"><b>2018</b></div></h2>
-
-										<div class="accordion-content">
-
-											<p><i class="fa-solid fa-newspaper"></i> Mauricio Souza, Lucas Veado, Renata Moreira, Eduardo Figueiredo, and Heitor Costa.<b><a href="https://doi.org/10.1016/j.infsof.2017.09.014" target="blank"> A Systematic Mapping Study on Game-related Methods for Software Engineering Education.</a></b> Information and Software Technology (IST), v. 95, pp. 201-218, 2018.</p>
-
-											<p><i class="fa-solid fa-users"></i> Allan Mori, Gustavo Vale, Markos Viggiato, Johnatan Oliveira, Eduardo Figueiredo, Elder Cirilo, Pooyan Jamshidi and Christian Kastner.<b><a href="http://dx.doi.org/10.1145/3194164.3194173" target="blank"> Evaluating Domain-Specific Metric Thresholds: An Empirical Study.</a></b> In proceedings of the 1st International Conference on Technical Debt (TechDebt), Gothenburg, Sweden, 27 - 28 May 2018.</p>
-
-											<p><i class="fa-solid fa-users"></i> Juliana Pereira, Sandro Schulze, Eduardo Figueiredo, Gunter Saake.<b><a href="https://doi.org/10.1145/3233027.3233039" target="blank"> N-dimensional Tensor Factorization for Self-Configuration of Software Product Lines at Runtime.</a></b> In proceedings of the 22nd Systems and Software Product Line Conference (SPLC), Gothenburg, Sweden, 10 - 14 September 2018.</p>
-
-											<p><i class="fa-solid fa-users"></i> Jabier Martinez, Nicolas Ordonez, Xhevahire Ternava, Tewfik Ziadi, Jairo Aponte, Eduardo Figueiredo, and Marco Tulio Valente.<b><a href="https://hal.sorbonne-universite.fr/hal-01722316/file/argouml-spl-feature%20%281%29.pdf" target="blank"> Feature Location Benchmark with ArgoUML SPL.</a></b> In proceedings of the 22nd Systems and Software Product Line Conference (SPLC), Challenge Track, Case 2, Gothenburg, Sweden, 10 - 14 September 2018.</p>
-
-											<p><i class="fa-solid fa-users"></i> Adriano Santos, Mauricio Souza, Marcella Dayrell, and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.5220/0006682200890101" target="blank"> Game Elements for Learning Programming: a Mapping Study.</a></b> In proceedings of the 10th International Conference on Computer Supported Education (CSEDU), Funchal, 15 - 17 March 2018.</p>
-
-											<p><i class="fa-solid fa-users"></i> Johnatan Oliveira, Markos Viggiato, Mateus Santos, Eduardo Figueiredo, and Humberto Marques-Neto.<b><a href="http://dx.doi.org/10.18293/SEKE2018-157" target="blank"> An Empirical Study on the Impact of Android Code Smells on Resource Usage.</a></b> In proceedings of the International Conference on Software Engineering and Knowledge Engineering (SEKE), San Francisco, 1 - 3 July 2018.</p>
-
-											<p><i class="fa-solid fa-users"></i> Adriano Santos, Mauricio Souza, Marcella Dayrell, and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.1109/FIE.2018.8658505" target="blank"> Exploring Game Elements in Learning Programming: An Empirical Evaluation.</a></b> In proceedings of the 48th IEEE Frontiers in Education Conference (FIE), San Jose, 3 - 6 October 2018.</p>
-
-											<p><i class="fa-solid fa-users"></i> Pedro Rodrigues, Mauricio Souza, and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.1109/FIE.2018.8658524" target="blank"> Games and Gamification in Software Engineering Education: A Survey with Educators.</a></b> In proceedings of the 48th IEEE Frontiers in Education Conference (FIE), San Jose, 3 - 6 October 2018.</p>
-
-											<p><i class="fa-solid fa-users"></i> Adriano Santos, Mauricio Souza, Johnatan Oliveira, and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.1145/3267183.3267192" target="blank"> Mining Software Repositories to Identify Library Experts.</a></b> In proceedings of the 12th Brazilian Symposium on Software Components, Architectures, and Reuse (SBCARS), Sao Carlos, 17 - 21 September 2018.</p>
-
-											<p><i class="fa-solid fa-users"></i> Allan Mori, Elder Cirilo, and Eduardo Figueiredo.<b><a href="#" target="blank"> TWarning: A Warning Tool for Domain-Sensitive Thresholds.</a></b> In proceedings of the Brazilian Conference on Software (CBSoft), Tools Session. Sao Carlos, 17 - 21 September 2018.</p>
-
-											<p><i class="fa-solid fa-users"></i> Markos Viggiato, Ricardo Terra, Henrique Rocha, Marco Tulio Valente, and Eduardo Figueiredo.<b><a href="https://doi.org/10.48550/arXiv.1808.04836" target="blank"> Microservices in Practice: A Survey Study.</a></b> In proceedings of the 6th Workshop on Software Visualization, Evolution and Maintenance (VEM), co-allocated with CBSoft. Sao Carlos, 2018.</p>
-
-											<p><i class="fa-solid fa-users"></i> Markos Viggiato and Eduardo Figueiredo.<b><a href="#" target="blank"> On the Investigation of Development Practices in Software Domains.</a></b> In proceedings of the Master and PhD Workshop on Software Engineering (WTDSoft), co-allocated with CBSoft. Sao Carlos, 17 - 21 September 2018.</p>
-
-											<p><i class="fa-solid fa-language"></i> Cleiton Tavares, Fischer Ferreira, Eduardo Figueiredo.<b><a href="https://doi.org/10.1145/3229345.3229357" target="blank"> Um Mapeamento Sistemático da Literatura sobre Ferramentas de Refatoração de Software.</a></b> Anais do Simpï¿½sio Brasileiro de Sistemas de Informaï¿½ï¿½o (SBSI). Caxias do Sul, 2018.</p>
-
-										</div>
-									</div>
-
-									<div class="accordion">
-										<h2><div class="accordion-header"><b>2017</b></div></h2>
-
-										<div class="accordion-content">
-
-											<p><i class="fa-solid fa-newspaper"></i> Juliana Pereira, Lucas Maciel, Thiago Noronha, and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.1111/itor.12414" target="blank"> Heuristic and Exact Algorithms for Product Configuration in Software Product Lines.</a></b> International Transactions in Operational Research (ITOR), Volume 24, Issue 6, pp. 1285-1306, November 2017.</p>
-
-											<p><i class="fa-solid fa-newspaper"></i> Juliana Pereira, Kattiana Constantino, Eduardo Figueiredo, and Gunter Saake.<b><a href="http://dx.doi.org/10.1007/978-3-319-56390-9_4" target="blank"> Quantitative and Qualitative Empirical Analysis of Three Feature Modeling Tools.</a></b> Communications in Computer and Information Science (CCIS), Volume 703, pp. 66-88, 2017.</p>
-
-											<p><i class="fa-solid fa-newspaper"></i> Thanis Paiva, Amanda Damasceno, Eduardo Figueiredo, Claudio Sant'Anna.<b><a href="https://doi.org/10.1186/s40411-017-0041-1" target="blank">  On the Evaluation of Code Smells and Detection Tools.</a></b> Journal of Software Engineering Research and Development (JSERD), 2017.</p>
-
-											<p><i class="fa-solid fa-newspaper"></i> Johnatan Oliveira, Eduardo Fernandes, Mauricio Souza, Eduardo Figueiredo.<b><a href="https://doi.org/10.5753/isys.2017.330" target="blank"> A Method Based on Naming Similarity to Identify Reuse Opportunities.</a></b> Brazilian Journal of Information Systems (iSys), v. 10, n. 1, 2017.</p>
-
-											<p><i class="fa-solid fa-newspaper"></i> Markos Viggiato, Johnatan Oliveira, Cleiton Tavares, Eduardo Figueiredo.<b><a href="https://infocomp.dcc.ufla.br/index.php/infocomp/article/view/556/494" target="blank"> On the Investigation of Domain-Sensitive Bad Smells in Information Systems.</a></b> INFOCOMP, 2017.</p>
-
-											<p><i class="fa-solid fa-users"></i> Eduardo Fernandes, Gustavo Vale, Leonardo Sousa, Eduardo Figueiredo, Alessandro Garcia, and Jaejoon Lee.<b><a href="https://doi.org/10.1007/978-3-319-56856-0_4" target="blank"> No Code Anomaly is an Island Anomaly Agglomeration as Sign of Product Line Instabilities.</a></b> In proceedings of the 16th International Conference on Software Reuse (ICSR), pp. 48-64, Salvador, 29 - 31 May 2017.</p>
-
-											<p><i class="fa-solid fa-users"></i> Mauricio Souza, Lucas Veado, Renata Moreira, Eduardo Figueiredo, and Heitor Xavier.<b><a href="https://doi.org/10.1109/ICSE-SEET.2017.17" target="blank"> Games for Learning: Bridging Game-Related Education Methods to Software Engineering Knowledge Areas.</a></b> In proceedings of the 39th International Conference on Software Engineering (ICSE), Software Engineering Education and Training track, pp. 170-179, Buenos Aires, 20 - 28 May 2017.</p>
-
-											<p><i class="fa-solid fa-school"></i> Joao Diniz, Gustavo Vale, Felipe Gaia, and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.1109/VACE.2017.7" target="blank"> Evaluating Delta-Oriented Programming for Evolving Software Product Lines.</a></b> In proceedings of the 2nd International Workshop on Variability and Complexity in Software Design (VACE), co-allocated with ICSE, pp. 27-33. Buenos Aires, 2017.</p>
-
-											<p><i class="fa-solid fa-school"></i> Guilherme Assis, Gustavo Vale, and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.1145/3141848.3141851" target="blank"> Feature Oriented Programming in Groovy.</a></b> In proceedings of the 8th International Workshop on Feature-Oriented Software Development (FOSD), co-allocated with SPLASH, pp. 21-30. Vancouver, 2017.</p>
-
-											<p><i class="fa-solid fa-school"></i> Allan Mori, Elder Cirilo, and Eduardo Figueiredo.<b><a href="#" target="blank"> Measuring and Comparing Quality Attributes of Software Development Communities.</a></b> In proceedings of the Master and PhD Workshop on Software Engineering (WTDSoft), co-allocated with CBSoft. Fortaleza, 2017.</p>
-
-										</div>
-									</div>
-
-									<div class="accordion">
-										<h2><div class="accordion-header"><b>2016</b></div></h2>
-
-										<div class="accordion-content">
-
-											<p><i class="fa-solid fa-newspaper"></i> Adriano Santos, Pericles Alves, Eduardo Figueiredo, and Fabiano Ferrari.<b><a href="http://dx.doi.org/10.1016/j.scico.2015.12.003" target="blank"> Avoiding Code Pitfalls in Aspect-Oriented Programming.</a></b> Science of Computer Programming (SCP), vol. 119, pp. 31ï¿½50, 2016.</p>
-
-											<p><i class="fa-solid fa-users"></i> Eduardo Fernandes, Johnatan Oliveira, Gustavo Vale, Thanis Paiva, and Eduardo Figueiredo.<b><a href="https://homepages.dcc.ufmg.br/~figueiredo/publications/ease16submitted.pdf" target="blank"> A Review-based Comparative Study of Bad Smell Detection Tools.</a></b> In proceedings of the 20th International Conference on Evaluation and Assessment in Software Engineering (EASE). Limerick, 1 - 3 June 2016. [ Acceptance rate: 23 % ]</p>
-
-											<p><i class="fa-solid fa-users"></i> Kattiana Constantino, Juliana Pereira, Juliana Padilha, Priscilla Vasconcelos, and Eduardo Figueiredo.<b><a href="https://homepages.dcc.ufmg.br/~figueiredo/publications/enase16ready.pdf" target="blank"> An Empirical Study of Two Software Product Line Tools.</a></b> In proceedings of the International Conference on Evaluation of Novel Approaches to Software Engineering (ENASE). Rome, 27 - 28 April 2016.</p>
-
-											<p><i class="fa-solid fa-users"></i> Eduardo Fernandes, Johnatan Oliveira, and Eduardo Figueiredo.<b><a href="https://homepages.dcc.ufmg.br/~figueiredo/publications/fie16ready.pdf" target="blank"> Investigating How Features of Online Learning Support Software Process Education.</a></b> In proceedings of the 46th Frontiers in Education Conference (FIE). Erie, 12 - 15 October 2016.</p>
-
-											<p><i class="fa-solid fa-users"></i> Lucas Veado, Gustavo Vale, Eduardo Fernandes, and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.1145/2915970.2916014" target="blank"> TDTool: Threshold Derivation Tool.</a></b> In proceedings of the 20th International Conference on Evaluation and Assessment in Software Engineering (EASE), Tools Session. Limerick, 1 - 3 June 2016.</p>
-														
-											<p><i class="fa-solid fa-users"></i> Gustavo Vale, Ramon Abilio, Juliana Pereira, Eduardo Figueiredo, Paulo Afonso, and Heitor Costa.<b><a href="https://wwwiti.cs.uni-magdeburg.de/iti_db/publikationen/ps/auto/ValeAP+16.pdf" target="blank"> Identification and Relationship Between Notation and Tool for Feature Models with Graphic Representation.</a></b> In proceedings of the International Conference of the Chilean Computer Science Society (SCCC). Valparaiso, Chile, 2016.</p>
-
-											<p><i class="fa-solid fa-users"></i> Johnatan Oliveira, Eduardo Fernandes, Mauricio Souza, and Eduardo Figueiredo.<b><a href="https://sol.sbc.org.br/index.php/sbsi/article/download/5976/5874/" target="blank"> A Method Based on Naming Similarity to Identify Reuse Opportunities.</a></b> In proceedings of the Brazilian Symposium on Information Systems (SBSI). Florianopolis, SC, 17 - 20 May 2016.</p>
-										
-											<p><i class="fa-solid fa-users"></i> Kattiana Constantino, Eduardo Figueiredo, Glauco Carneiro, and Raquel Minardi.<b><a href="https://doi.org/10.5753/sbsi.2016.59685874/" target="blank"> Multiple View Interactive Environment to Analyze Software Product Line Tools.</a></b> In proceedings of the Brazilian Symposium on Information Systems (SBSI). Florianopolis, SC, 17 - 20 May 2016.</p>
-
-											<p><i class="fa-solid fa-users"></i> Eduardo Fernandes, Fischer Ferreira, Joao Antonio Netto, and Eduardo Figueiredo.<b><a href="https://doi.org/10.5753/sbsi.2016.5998/" target="blank"> Information Systems Development with Pair Programming: An Academic Quasi-Experiment.</a></b> In proceedings of the Brazilian Symposium on Information Systems (SBSI). Florianopolis, SC, 17 - 20 May 2016.</p>
-
-											<p><i class="fa-solid fa-school"></i> Ramon Abilio, Gustavo Vale, Eduardo Figueiredo, and Heitor Costa.<b><a href="https://homepages.dcc.ufmg.br/~figueiredo/publications/wetsom16ready.pdf/" target="blank"> Metrics for Feature-Oriented Programming.</a></b> In proceedings of the 7th International Workshop on Emerging Trends in Software Metrics (WETSoM), co-allocated with ICSE. Austin, TX, 2016.</p>
-							
-											<p><i class="fa-solid fa-school"></i> Alexandre Paiva, Johnatan Oliveira, and Eduardo Figueiredo.<b><a href="https://homepages.dcc.ufmg.br/~figueiredo/publications/vem16ready.pdf/" target="blank"> Dolly or Shaun? A Survey to Verify Code Clones Detected using Similar Sequences of Method Calls.</a></b> In proceedings of the Workshop on Software Visualization, Evolution, and Maintenance (VEM), co-allocated with CBSoft. Maringa, PR, 19 - 23 September 2016.</p>
-
-											<p><i class="fa-solid fa-school"></i> Eduardo Fernandes and Eduardo Figueiredo.<b><a href="https://www.researchgate.net/publication/317542923_Detecting_Code_Anomalies_in_Software_Product_Lines/" target="blank"> Detecting Code Anomalies in Software Product Lines.</a></b> In proceedings of the Master and PhD Workshop on Software Engineering (WTDSoft), co-allocated with CBSoft. Maringa, PR, 19 - 23 September 2016.</p>
-
-											<p><i class="fa-solid fa-school"></i> Johnatan Oliveira and Eduardo Figueiredo.<b><a href="#" target="blank"> A Recommendation System of Reuse Opportunities based on Lexical Analysis.</a></b> In proceedings of the Master and PhD Workshop on Information Systems (WTDSI), co-allocated with SBSI. Florianopolis, SC, 17 - 20 May 2016.</p>
-
-											<p><i class="fa-solid fa-language"></i> Marina Santos, Mauricio Souza, Eduardo Figueiredo.<b><a href="https://sol.sbc.org.br/index.php/washes/article/view/6221/6119/" target="blank"> Padrões de Projeto em Java: Um Estudo Prático sobre a Utilização e Benefícios.</a></b> In proceedings of the Workshop sobre Aspectos Sociais, Humanos e Econï¿½micos de Software (WASHES), co-allocated with SBQS. Maceio, 2016.</p>
-											
-											<p><i class="fa-solid fa-language"></i> Markos Viggiato, Johnatan Oliveira, Eduardo Figueiredo.<b><a href="https://www.researchgate.net/publication/309429961_Configuracao_de_Produtos_em_Linha_de_Produtos_de_Software/" target="blank"> Configuração de Produtos em Linha de Produtos de Software.</a></b> In proceedings of the Simpósio Mineiro de Sistemas de Informação (SMSI). Belo Horizonte, 31/08 a 01/09, 2016.</p>
-
-										</div>
-									</div>
-
-
-									<hr class="major" />
-
-								</section>
-
+										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li--></ul>
+				</header>
+				<!-- Content -->
+				<section>
+					<header class="main">
+						<h1>Publications</h1> </header>
+					<hr class="major" />
+					<p> <i class="fa-solid fa-star"></i> Featured publications &emsp; <i class="fa-solid fa-newspaper"></i> Journal Papers &emsp; <i class="fa-solid fa-users"></i> Conference Papers &emsp; <i class="fa-solid fa-school"></i> WorkShop Papers &emsp;
+						<br /> <i class="fa-solid fa-language"></i> Publications in Portuguese &emsp; <i class="fa-solid fa-gears"></i> Technical Reports &emsp; <i class="fa-solid fa-graduation-cap"></i> Final Course Projects </i>
+					</p>
+					<div class="accordion active">
+						<h2><div class="accordion-header"><b>2024</b></div></h2>
+						<div class="accordion-content">
+							<p><i class="fa-solid fa-users"></i> Johnatan Oliveira, Mauricio Souza, Eduardo Figueiredo. <b>Evaluating a Method to Select Software Developers from Source Code Analysis</b> International Journal of Software Engineering and Knowledge Engineering (IJSEKE), 2024.
+								<br/> <a href="publications/2024/ijseke-johnatan-2024.pdf" class="button small">PDF</a> </p>
+							<p><i class="fa-solid fa-users"></i> Johnatan Oliveira, Eduardo Figueiredo <b> How to Identify Programming Skills from Source Code?</b>  In proceedings of the 4th LATAM School in Software Engineering (SE School), co-allocated with CBSoft. Curitiba, 2024.
+								<br/> <a href="publications/2024/ICSME-2024-AmandaSantana - Preprint.pdf" class="button small">PDF</a> </p>
+							<p><i class="fa-solid fa-users"></i> Amanda Santana, Eduardo Figueiredo, Juliana Alves Pereira <b>Unraveling the Impact of Code Smell Agglomerations on Code Stability</b> In proceedings of the 40th International Conference on Software Maintenance and Evolution (ICSME). Flagstaff, AZ, USA. 2024.
+								<br/> <a href="publications/2024/ICSME-2024-AmandaSantana - Preprint.pdf" class="button small">PDF</a> </p>
+							<p><i class="fa-solid fa-users"></i> Jefferson G. M. Lopes, Johnatan Oliveira, Eduardo Figueiredo <b>Evaluating the Impact of Developer Experience on Code Quality: A Systematic Literature Review</b> In proceedings of the 27th Ibero-American Conference on Software Engineering (CIbSE). Curitiba, 2024.
+								<br/> <a href="publications/2024/cibse2024lopes.pdf" class="button small">PDF</a> </p>
+							<p><i class="fa-solid fa-newspaper"></i> Kattiana Constantino, Raquel Prates, and Eduardo Figueiredo. <b>A User Evaluation of a Collaborator Recommender based on Co-Changed Files</b> Journal on Interactive Systems (JIS 2024).
+								<br/> <a href="publications/2024/jis2024preprint.pdf" class="button small">PDF</a> <a href="https://doi.org/10.5753/jis.2024.3728" class="button small">DOI</a> </p>
+							<p><i class="fa-solid fa-users"></i> Henrique Nunes, Amanda Santana, Eduardo Figueiredo and Heitor Costa. <b>Tuning Code Smell Prediction Models: A Replication Study</b> In proceedings of the 32nd International Conference on Program Comprehension (ICPC 2024). Lisbon, 2024.
+								<br/> <a href="publications/2024/icpc2024preprint.pdf" class="button small">PDF</a> </p>
+							<p><i class="fa-solid fa-users"></i> Euler Marinho, Fischer Ferreira, Eduardo Fernandes, João P. Diniz, and Eduardo Figueiredo. <b>Resource Interaction Failures in Mobile Applications: A
+											Challenge for the Software Product Line Testing Community</b> In proceedings of the 28th ACM International Systems and Software Product Line Conference (SPLC). Luxembourg, 2024.
+								<br/> <a href="publications/2024/splc2024preprint.pdf" class="button small">PDF</a> </p>
+							<p><i class="fa-solid fa-users"></i> Euler Marinho, Izaias Pessoa Neto, Fischer Ferreira, Joao Paulo Diniz, and Eduardo Figueiredo. <b>RIFDiscoverer: A Tool For Finding Resource Interaction 
+												Failures in Mobile Application</b> In proceedings of the 28th ACM International Systems and Software Product Line Conference (SPLC). Luxembourg, 2024.
+								<br/> <a href="publications/2024/splc2024tool.pdf" class="button small">PDF</a> </p>
+							<p><i class="fa-solid fa-users"></i> Daniel Cruz, Amanda Santana, and Eduardo Figueiredo. <b>An Exploratory Evaluation of Continuous Feedback to Enhance Machine Learning Code Smell Detection</b> In proceedings of the 27th Ibero-American Conference on Software Engineering (CIbSE). Curitiba, 2024.
+								<br/> <a href="publications/2024/cibse2024cruz.pdf" class="button small">PDF</a> </p>
+							<p><i class="fa-solid fa-users"></i> Klayver Carmo, Fischer Ferreira, and Eduardo Figueiredo. <b>Performance Evaluation of Back-End Frameworks: A Comparative Study</b> In proceedings of the Brazilian Symposium on Information Systems (SBSI). Juiz de Fora, 2024.
+								<br/> <a href="publications/2024/sbsi2024preprint.pdf" class="button small">PDF</a> </p>
+							<p><i class="fa-solid fa-users"></i> Amanda Santana, Eduardo Figueiredo, Juliana Alves Pereira, Alessandro Garcia. <b>An Exploratory Evaluation of Code Smell Agglomerations</b> Software Quality Journal (SQJ). 2024.
+								<br/> <a href="publications/2024/SQJ2024Santana.pdf" class="button small">PDF</a> </p>
 						</div>
 					</div>
-
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<li><a href="index.html">Home</a></li>
-										<li><a href="members.html">Members</a></li>
-										<li><a href="seminars/">Seminars</a></li>
-										<li><a href="publications.html">Publications</a></li>
-										<!--li><a href="elements.html">Laboratory</a></li-->
-									</ul>
-								</nav>
-
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Get in touch</h2>
-									</header>
-									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="#">labsoft@dcc.ufmg.br</a></li>
-										<li class="icon solid fa-phone">+55 31 3409-1474<br />
-										+55 31 3409-1475	
-										</li>
-										
-										<li class="icon solid fa-home">
-								                      Room 2313, Department of Computer Science (DCC),
-								                      Federal University of Minas Gerais (UFMG).<br>
-								                      Antonio Carlos Avenue, 6627, Pampulha,
-										      Belo Horizonte, Minas Gerais, Brazil.<br>
-									  </li>
-									</ul>
-								</section>
+					<div class="accordion active">
+						<h2><div class="accordion-header"><b>2023</b></div></h2>
+						<div class="accordion-content">
+							<p><i class="fa-solid fa-newspaper"></i> Kattiana Constantino, Fabiano Belem, Eduardo Figueiredo. <b> Dual Analysis for Helping Developers to Find Collaborators Based on Co-Changed Files: An Empirical Study</b>. Software: Practice and Experience (SPE), 2023.
+								<br /> <a href="publications/2023/spe2023preprint.pdf" class="button small">PDF</a> <a href="https://doi.org/10.1002/spe.3194" class="button small">DOI</a> </p>
+							<p><i class="fa-solid fa-newspaper"></i> Thiago Nicolini, Andre Hora, Eduardo Figueiredo. <b> On the Usage of New JavaScript Features through Transpilers: The Babel Case.</b> IEEE Software, 2023.
+								<br /> <a href="publications/2023/software2023preprint.pdf" class="button small">PDF</a> <a href="https://doi.org/10.1109/MS.2023.3243858" class="button small">DOI</a> </p>
+							<p><i class="fa-solid fa-newspaper"></i> Euler Marinho, Fischer Ferreira, Joao Paulo Diniz, and Eduardo Figueiredo.<b> Evaluating Testing Strategies for Resource related Failures in Mobile Applications.</b> Software Quality Journal (SQJ), 2023.
+								<br /> <a href="publications/2023/sqj2023preprint.pdf" class="button small">PDF</a> <a href="https://doi.org/10.1007/s11219-023-09627-3" class="button small">DOI</a> </p>
+							<p><i class="fa-solid fa-users"></i> Geanderson Santos, Amanda Santana, Gustavo Vale, and Eduardo Figueiredo.<b> Yet Another Model! A Study on Model's Similarities for Defect and Code Smells.</b> In proceedings of the 26th International Conference on Fundamental Approaches to Software Engineering (FASE), LNCS, volume 13991. Paris, 2023.
+								<br /> <a href="publications/2023/fase2023preprint.pdf" class="button small">PDF</a> <a href="https://doi.org/10.1007/978-3-031-30826-0_16" class="button small">DOI</a> </p>
+							<p><i class="fa-solid fa-users"></i> Joao Paulo Diniz, Fischer Ferreira, Fabiano Ferrari, and Eduardo Figueiredo.<b> Are the Mutations of Strongly Subsuming Second-Order Mutants Actually Masking Each Other?.</b> In proceedings of the 34th IEEE International Symposium on Software Reliability Engineering (ISSRE), Florence, 2023.
+								<br /> <a href="publications/2023/issre2023preprint.pdf" class="button small">PDF</a> </p>
+							<p><i class="fa-solid fa-users"></i> Gustavo Vale, Eduardo Fernandes, Eduardo Figueiredo, and Sven Apel.<b> Behind Developer Contributions on Conflicting Merge Scenarios.</b> In proceedings of the 23rd IEEE International Working Conference on Source Code Analysis and Manipulation (SCAM), Bogota, 2023.
+								<br /> <a href="publications/2023/scam2023preprint.pdf" class="button small">PDF</a> </p>
+							<p><i class="fa-solid fa-users"></i> Kattiana Constantino, Raquel Prates, and Eduardo Figueiredo.<b> Recommending Collaborators Based on Co-Changed Files: A Controlled Experiment.</b> In proceedings of the Brazilian Symposium on Collaborative Systems (SBSC), pp. 154-168, Rio de Janeiro, 2023.
+								<br /> <a href="publications/2023/sbsc2023preprint.pdf" class="button small">PDF</a> <a href="https://doi.org/10.5753/sbsc.2023.229104" class="button small">DOI</a> </p>
+							<p><i class="fa-solid fa-users"></i> Euler Marinho, Fischer Ferreira, Joao Paulo Diniz, Fischer Ferreira, and Eduardo Figueiredo.<b> Applying Spectrum-Based Fault Localization to Android Applications.</b> In proceedings of the Brazilian Symposium on Software Engineering Software (SBES), Campo Grande, 2023.
+								<br /> <a href="publications/2023/sbes2023preprint.pdf" class="button small">PDF</a> </p>
+							<p><i class="fa-solid fa-school"></i> Kattiana Constantino and Eduardo Figueiredo.<b> Finding Collaborations based on Co-Changed Files.</b> In proceedings of the Master and PhD Contest on Collaborative Systems (CTDSC), co-allocated with SBSC. Rio de Janeiro, 2023.
+								<br /> <a href="publications/2023/ctdsc2023preprint.pdf" class="button small">PDF</a> </p>
 						</div>
 					</div>
-
+					<div class="accordion">
+						<h2><div class="accordion-header"><b>2022</b></div></h2>
+						<div class="accordion-content">
+							<p><i class="fa-solid fa-newspaper"></i> Rodrigo Moreira, Eduardo Fernandes, and Eduardo Figueiredo. <b><a href="https://hillside.net/plop/2022/papers/G4_P3.pdf" target="blank">Review-based Comparison of Design Pattern Detection Tools</a></b>. In proceedings of the International Conference on Pattern Languages of Programs (PLoP), SugarLoaf Track, Virtual, 2022.</p>
+							<p><i class="fa-solid fa-newspaper"></i> Rodrigo Moreira, Wesley Assuncao, Jabier Martinez, and Eduardo Figueiredo. <b><a href="https://doi.org/10.1007/s10664-021-10104-3" target="blank">Open-Source Software Product Line Extraction Processes: the ArgoUML-SPL and Phaser Cases</a></b>. Empirical Software Engineering (EMSE), vol. 27, issue 4m 2022.</p>
+							<p><i class="fa-solid fa-newspaper"></i> Romulo Nascimento, Eduardo Figueiredo, and Andre Hora.<b><a href="https://doi.org/10.1109/MS.2021.3103134" target="blank"> JavaScript API Deprecation Landscape: A Survey and Mining Study</a></b>. IEEE Software, vol. 39, issue 3, 2022.</p>
+							<p><i class="fa-solid fa-users"></i> Romulo Nascimento, Eduardo Figueiredo, and Andre Hora.<b><a href="https://doi.org/10.1109/SANER53432.2022.00031" target="blank"> Exploring API Deprecation Evolution in JavaScript.</a></b> In proceedings of the IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER), Honolulu, Hawaii, 2022.</p>
+							<p><i class="fa-solid fa-users"></i> Kattiana Constantino and Eduardo Figueiredo.<b><a href="#" target="blank"> CoopFinder: Finding Collaborators Based on Co-Changed Files.</a></b> In proceedings of the IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC), Poster and Showpiece Track, Rome, Italy, 2022.</p>
+							<p><i class="fa-solid fa-users"></i> Denis Pinheiro, Johnatan Oliveira, and Eduardo Figueiredo.<b><a href="https://www.conf-micro.services/2022/papers/paper_11.pdf" target="blank"> Microservice Smells and Automated Detection Tools: A Systematic Literature Review.</a></b> In proceedings of the International Conference on Microservices (Microservices), Paris, France, 2022.</p>
+							<p><i class="fa-solid fa-users"></i> Geanderson Santos, Adriano Veloso, and Eduardo Figueiredo.<b><a href="https://doi.org/10.5220/0011045700003176" target="blank"> The Subtle Art of Digging for Defects: Analyzing Features for Defect Prediction in Java Projects.</a></b> In proceedings of the International Conference on Evaluation of Novel Approaches to Software Engineering (ENASE), Online, 2022.</p>
+							<p><i class="fa-solid fa-users"></i> Johnatan Oliveira, Matheus Flauzino, Mauricio Souza, Rafael Durelli, and Eduardo Figueiredo.<b><a href="https://doi.org/10.1007/978-3-031-14179-9_11" target="blank"> Can Source Code Analysis Indicate Programming Skills? A Survey with Developers.</a></b> In proceedings of the 15th International Conference on the Quality of Information and Communications Technology (QUATIC), Talavera de la Reina, Spain, 2022. [ ] best paper</p>
+							<p><i class="fa-solid fa-users"></i> Geanderson Santos, Adriano Veloso, and Eduardo Figueiredo.<b><a href="#" target="blank"> Understanding Thresholds of Software Features for Defect Prediction.</a></b> In proceedings of the Brazilian Symposium on Software Engineering (SBES), Insightful Ideas and Emerging Results Track, Uberlandia, 2022.</p>
+							<p><i class="fa-solid fa-users"></i> Jefferson Lopes, Johnatan Oliveira, and Eduardo Figueiredo.<b><a href="https://doi.org/10.1145/3555228.3555277" target="blank"> EXTRACTPRO: A Data Mining Tool for Developer Profile Generation based on Source Code Analysis.</a></b> In proceedings of the Brazilian Symposium on Software Engineering (SBES), Tools Track, Uberlandia, 2022.</p>
+						</div>
+					</div>
+					<div class="accordion">
+						<h2><div class="accordion-header"><b>2021</b></div></h2>
+						<div class="accordion-content">
+							<p><i class="fa-solid fa-star"></i> <i class="fa-solid fa-newspaper"></i> Gustavo Vale, Claus Hunsen, Eduardo Figueiredo, and Sven Apel. <b><a href="https://doi.org/10.1109/TSE.2021.3130098" target="blank">Challenges of Resolving Merge Conflicts: A Mining and Survey Study</a></b>. IEEE Transactions on Software Engineering (TSE), 2021.</p>
+							<p><i class="fa-solid fa-newspaper"></i> Fischer Ferreira, Gustavo Vale, Joao Paulo Diniz, and Eduardo Figueiredo.<b><a href="https://doi.org/10.1016/j.jss.2021.110990" target="blank"> Evaluating T-wise Testing Strategies in a Community-wide Dataset of Configurable Software Systems.</a></b> Journal of Systems and Software (JSS), v. 179, 2021.</p>
+							<p><i class="fa-solid fa-newspaper"></i> Kattiana Constantino, Mauricio Souza, Shurui Zhou, Eduardo Figueiredo, and Christian Kastner.<b><a href="https://doi.org/10.1002/smr.2393" target="blank"> Perceptions of Open-Source Software Developers on Collaborations: An Interview and Survey Study.</a></b> Journal of Software: Evolution and Process (JSEP), Volume 35, Issue 5, 2021.</p>
+							<p><i class="fa-solid fa-newspaper"></i> Johnatan Oliveira, Markos Viggiato, Denis Pinheiro, and Eduardo Figueiredo.<b><a href="https://doi.org/10.5753/jserd.2021.548" target="blank"> Mining Experts from Source Code Analysis: An Empirical Evaluation.</a></b> Journal of Software Engineering Research and Development (JSERD), 2021.</p>
+							<p><i class="fa-solid fa-users"></i> Joao Paulo Diniz, Chu-Pan Wong, Christian Kastner, and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.1109/ICST49551.2021.00028" target="blank"> Dissecting Strongly Subsuming Second-Order Mutants.</a></b> In proceedings of the International Conference on Software Testing, Verification and Validation (ICST), Porto de Galinhas, Brazil, 2021.</p>
+							<p><i class="fa-solid fa-users"></i> Amanda Santana, Daniel Cruz, and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.1145/3412841.3442003" target="blank"> An Exploratory Study on the Identification and Evaluation of Bad Smell Agglomerations.</a></b> In proceedings of the 36th Symposium On Applied Computing (ACM SAC), Gwangju, South Korea, 2021. [ ] best paper</p>
+							<p><i class="fa-solid fa-users"></i> Igor Pereira, Eduardo Figueiredo, and Tiago Carneiro.<b><a href="http://dx.doi.org/10.1145/3412841.3442126" target="blank"> A Systematic Review on the Use of DevOps in Internet of Things Software Systems.</a></b> In proceedings of the 36th Symposium On Applied Computing (ACM SAC), Gwangju, South Korea, 2021.</p>
+							<p><i class="fa-solid fa-users"></i> Euler Marinho, Joao Paulo Diniz, Fischer Ferreira, and Eduardo Figueiredo.<b><a href="#" target="blank"> Evaluating Sensor Interaction Failures in Mobile Applications.</a></b> In proceedings of the International Conference on the Quality of Information and Communications Technology (QUATIC), Faro, Portugal, 2021.</p>
+							<p><i class="fa-solid fa-users"></i> Fischer Ferreira, Joao Paulo Diniz, Gustavo Vale, and Eduardo Figueiredo.<b><a href="#" target="blank"> On the Challenges for Creating a Test Suite for Configurable Software Systems.</a></b> In proceedings of the 24th Iberoamerican Conference on Software Engineering (CIbSE), Software Engineering Track, San Jose, Costa Rica, 2021.</p>
+							<p><i class="fa-solid fa-users"></i> Igor Pereira, Tiago Carneiro, and Eduardo Figueiredo.<b><a href="https://doi.org/10.1145/3474624.3474630" target="blank"> Main Differences with DevOps on IoT Systems.</a></b> In proceedings of the Brazilian Symposium on Software Engineering (SBES), Joinville, 2021.</p>
+							<p><i class="fa-solid fa-users"></i> Igor Pereira, Tiago Carneiro, and Eduardo Figueiredo.<b><a href="https://doi.org/10.1145/3493244.3493261" target="blank"> Investigating Continuous Delivery on IoT Systems.</a></b> In proceedings of the Brazilian Symposium on Software Quality (SBQS), Vitoria, 2021.</p>
+							<p><i class="fa-solid fa-school"></i> Igor Pereira, Tiago Carneiro, and Eduardo Figueiredo.<b><a href="https://doi.org/10.48550/arXiv.2104.10147" target="blank"> Understanding the context of IoT software systems in DevOps.</a></b> In proceedings of the 3rd International Workshop on Software Engineering Research & Practices for the Internet of Things (SERP4IoT), co-allocated with ICSE. Madrid, Spain, 2021. </p>
+							<p><i class="fa-solid fa-school"></i> Denis Pinheiro, Eduardo Figueiredo.<b><a href="https://doi.org/10.5753/sbqs_estendido.2021.18555" target="blank"> Microservices Bad Smells and Automated Detection Tools.</a></b> In proceedings of the Master and PhD Workshop on Software Quality (WTDQS), co-allocated with SBQS. Vitoria, 2021.</p>
+						</div>
+					</div>
+					<div class="accordion">
+						<h2><div class="accordion-header"><b>2020</b></div></h2>
+						<div class="accordion-content">
+							<p><i class="fa-solid fa-newspaper"></i> Geanderson Esteves, Eduardo Figueiredo, Adriano Veloso, Markos Viggiato, and Nivio Ziviani.<b><a href="https://link.springer.com/article/10.1007/s10515-020-00277-4" target="blank"> Understanding Machine Learning Software Defect Predictions.</a></b> Automated Software Engineering - An International Journal (ASEJ), 2020.</p>
+							<p><i class="fa-solid fa-star"></i> <i class="fa-solid fa-users"></i> Chu-Pan Wong, Jens Meinicke, Leo Chen, Joao Paulo Diniz, Christian Kastner, and Eduardo Figueiredo.<b><a href="https://https://doi.org/10.48550/arXiv.2004.02000" target="blank"> Efficiently Finding Higher-Order Mutants.</a></b> In proceedings of the Symposium on the Foundations of Software Engineering (FSE), Sacramento, USA, 2020.</p>
+							<p><i class="fa-solid fa-users"></i> Kattiana Constantino, Shurui Zhou, Mauricio Souza, Eduardo Figueiredo, and Christian Kï¿½stner.<b><a href="https://www.cs.cmu.edu/~ckaestne/pdf/icgse20.pdf" target="blank"> Understanding Collaborative Software Development: An Interview Study.</a></b> In proceedings of the 15th International Conference on Global Software Engineering (ICGSE), Seoul, South Korea, 2020.</p>
+							<p><i class="fa-solid fa-users"></i> Geanderson dos Santos and Eduardo Figueiredo.<b><a href="#" target="blank"> The Failure of One, the Fall of Many: An Exploratory Study of Software Features for Defect Prediction.</a></b> In proceedings of the 20th International Working Conference on Source Code Analysis and Manipulation (SCAM), Adelaide, Australia, 27 - 28 September 2020.</p>
+							<p><i class="fa-solid fa-users"></i> Fischer Ferreira, Gustavo Vale, Eduardo Figueiredo, and Joao Paulo Diniz.<b><a href="http://dx.doi.org/10.1145/3377024.3377045" target="blank"> On the Proposal and Evaluation of a Test-enriched Dataset for Configurable Software Systems.</a></b> In proceedings of the 13th International Working Conference on Variability Modelling of Software-Intensive Systems (VAMOS), Magdeburg, Germany, 5 - 7 February 2020.</p>
+							<p><i class="fa-solid fa-users"></i> Daniel Cruz, Eduardo Figueiredo, and Amanda Santana.<b><a href="http://dx.doi.org/10.1145/3387906.3388618" target="blank"> Detecting Bad Smells with Machine Learning Algorithms: an Empirical Study.</a></b> In proceedings of the International Conference on Technical Debt (TechDebt), Seoul, South Korea, 2020.</p>
+							<p><i class="fa-solid fa-users"></i> Romulo Nascimento, Aline Brito, Andre Hora, and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.1109/SANER48275.2020.9054854" target="blank"> JavaScript API Deprecation in the Wild: A First Assessment.</a></b> In proceedings of the 27th International Conference on Software Analysis, Evolution, and Reengineering (SANER), Early Research Achievements (ERA) Track, London, Canada, 18 - 21 February 2020.</p>
+							<p><i class="fa-solid fa-users"></i> Joao Paulo Diniz, Daniel Cruz, Fabio Ferreira, Cleiton Silva, and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.1109/SCAM51674.2020.00033" target="blank"> GitHub Label Embeddings.</a></b> In proceedings of the 20th International Working Conference on Source Code Analysis and Manipulation (SCAM), New Ideas and Emerging Results (NIER) Track, Adelaide, Australia, 27 - 28 September 2020. </p>
+							<p><i class="fa-solid fa-users"></i> Jabier Martinez, Daniele Wolfart, Wesley Assuncao, and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.1145/3382025.3414971" target="blank"> Insights on Software Product Line Extraction Processes: ArgoUML to ArgoUML SPL Revisited.</a></b> In proceedings of the International Systems and Software Product Line Conference (SPLC), Short Papers Track, Montreal, Canada, October 2020.</p>
+							<p><i class="fa-solid fa-users"></i> Fischer Ferreira, Markos Viggiato, Maurï¿½cio Souza, and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.1145/3382025.3414725" target="blank"> Testing Configurable Software Systems: The Failure Observation Challenge.</a></b> In proceedings of the International Systems and Software Product Line Conference (SPLC), Challenge Track, Montreal, Canada, October 2020.</p>
+							<p><i class="fa-solid fa-users"></i> Fischer Ferreira, Eduardo Fernandes, Johnatan Oliveira, Mauricio Souza, and Eduardo Figueiredo.<b><a href="https://www.researchgate.net/publication/350084819_How_Difficult_and_Effective_is_Writing_Assertions_for_Observing_Bugs_at_Runtime" target="blank"> How Difficult and Effective is Writing Assertions for Observing Bugs at Runtime?</a></b> In proceedings of the 23rd Iberoamerican Conference on Software Engineering (CIbSE), Experimental Software Engineering Track (ESELAW), Curitiba, Brazil, 2020. </p>
+							<p><i class="fa-solid fa-users"></i> Cleiton Silva, Amanda Santana, Eduardo Figueiredo, and Mariza Bigonha.<b><a href="http://cibse2020.ppgia.pucpr.br/images/artigos/12/S12_P1.pdf" target="blank"> Revisiting the Bad Smell and Refactoring Relationship: A Systematic Literature Review.</a></b> In proceedings of the 23rd Iberoamerican Conference on Software Engineering (CIbSE), Experimental Software Engineering Track (ESELAW), Curitiba, Brazil, 2020.</p>
+							<p><i class="fa-solid fa-users"></i> Geanderson Santos and Eduardo Figueiredo.<b><a href="http://cibse2020.ppgia.pucpr.br/images/artigos/4/S04_P1.pdf" target="blank"> Commit Classification using Natural Language Processing: Experiments over Labeled Datasets.</a></b> In proceedings of the 23rd Iberoamerican Conference on Software Engineering (CIbSE), Experimental Software Engineering Track (ESELAW), Curitiba, Brazil, 2020. </p>
+							<p><i class="fa-solid fa-users"></i> Cleiton Tavares, Eduardo Figueiredo, and Mariza Bigonha.<b><a href="http://dx.doi.org/10.1145/3422392.3422408" target="blank"> Analyzing the Impact of Refactoring on Bad Smells.</a></b> In proceedings of the Brazilian Symposium on Software Engineering (SBES), Natal, 19 - 23 October 2020.</p>
+							<p><i class="fa-solid fa-users"></i> Geanderson Santos, Eduardo Figueiredo, Adriano Veloso, Markos Viggiato, and Nivio Ziviani.<b><a href="http://dx.doi.org/10.1145/3439961.3439979" target="blank"> Predicting Software Defects with Explainable Machine Learning.</a></b> In proceedings of the Brazilian Symposium on Software Quality (SBQS), Manaus, 1 - 4 December 2020.</p>
+							<p><i class="fa-solid fa-users"></i> Johnatan Oliveira, Denis Pinheiro, and Eduardo Figueiredo.<b><a href="https://doi.org/10.1145/3422392.3422500" target="blank"> JExpert: A Tool for Library Expert Identification.</a></b> In proceedings of the Brazilian Symposium on Software Engineering (SBES), Tools Track, Natal, 19 - 23 October 2020.</p>
+							<p><i class="fa-solid fa-users"></i> Euler Marinho and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.1145/3422392.3422508" target="blank"> PLATOOL: A Functional Test Generation Tool for Mobile Applications.</a></b> In proceedings of the Brazilian Symposium on Software Engineering (SBES), Tools Track, Natal, 19 - 23 October 2020.</p>
+							<p><i class="fa-solid fa-school"></i> Fischer Ferreira and Eduardo Figueiredo.<b><a href="https://cibse2020.ppgia.pucpr.br/images/artigos/17/S17_P3.pdf" target="blank"> A Test Strategy for Configurable Software Systems Using Machine Learning.</a></b> In proceedings of the 23rd Iberoamerican Conference on Software Engineering (CIbSE), Doctoral Symposium, Curitiba, Brazil, 2020.</p>
+							<p><i class="fa-solid fa-school"></i> Cleiton Tavares, Mariza Bigonha, and Eduardo Figueiredo.<b><a href="https://doi.org/10.5753/cbsoft_estendido.2020.14615" target="blank"> Quantifying the Effects of Refactorings on Bad Smells.</a></b> In proceedings of the Master and PhD Workshop on Software Engineering (WTDSoft), co-allocated with CBSoft. Natal, 19 - 23 October 2020.</p>
+							<p><i class="fa-solid fa-school"></i> Romulo Nascimento, Eduardo Figueiredo, and Andre Hora.<b><a href="https://sol.sbc.org.br/index.php/cbsoft_estendido/article/download/14616/14461/" target="blank"> Assessing JavaScript API Deprecation.</a></b> In proceedings of the Master and PhD Workshop on Software Engineering (WTDSoft), co-allocated with CBSoft. Natal, 19 - 23 October 2020.</p>
+						</div>
+					</div>
+					<div class="accordion">
+						<h2><div class="accordion-header"><b>2019</b></div></h2>
+						<div class="accordion-content">
+							<p><i class="fa-solid fa-newspaper"></i> Gustavo Vale, Eduardo Fernandes, and Eduardo Figueiredo.<b><a href="https://doi.org/10.1007/s11219-018-9405-y" target="blank"> On the Proposal and Evaluation of a Benchmark-based Threshold Derivation Method.</a></b> Software Quality Journal (SQJ), vol. 27, pp. 275ï¿½306, 2019.</p>
+							<p><i class="fa-solid fa-newspaper"></i> Adriano Santos, Mauricio Souza, Marcella Dayrell, and Eduardo Figueiredo.<b><a href="https://doi.org/10.1007/978-3-030-21151-6_17" target="blank"> A Systematic Mapping Study on Game Elements and Serious Games for Learning Programming.</a></b> Communications in Computer and Information Science (CCIS), volume 1022, 2019.</p>
+							<p><i class="fa-solid fa-users"></i> Markos Viggiato, Johnatan Oliveira, Eduardo Figueiredo, Pooyan Jamshidi, and Christian Kastner.<b><a href="http://dx.doi.org/10.1109/ICGSE.2019.00013" target="blank"> Understanding Similarities and Differences in Software Development Practices Across Domains.</a></b> In proceedings of the 14th ACM/IEEE International Conference on Global Software Engineering (ICGSE), Montreal, Canada, 24 - 26 May 2019. [ Acceptance rate: 26 % ]</p>
+							<p><i class="fa-solid fa-users"></i> Fischer Ferreira, João Paulo Diniz, Cleiton Tavares, and Eduardo Figueiredo.<b><a href="#" target="blank"> Testing Tools for Configurable Software Systems: A Review-based Empirical Study.</a></b> In proceedings of the 13th International Workshop on Variability Modelling of Software-Intensive Systems (VAMOS), Leuven, Belgium, 6 - 8 February 2019.</p>
+							<p><i class="fa-solid fa-users"></i> Daniel Cruz, Eduardo Figueiredo, and Jabier Martinez.<b><a href="http://dx.doi.org/10.1145/3302333.3302343" target="blank"> A Literature Review and Comparison of Three Feature Location Techniques using ArgoUML-SPL.</a></b> In proceedings of the 13th International Workshop on Variability Modelling of Software-Intensive Systems (VAMOS), Leuven, Belgium, 6 - 8 February 2019.</p>
+							<p><i class="fa-solid fa-users"></i> Markos Viggiato, Johnatan Oliveira, Eduardo Figueiredo, Pooyan Jamshidi, and Christian Kastner.<b><a href="http://dx.doi.org/10.1109/ICSME.2019.00033" target="blank"> How Do Code Changes Evolve in Different Platforms? A Mining-based Investigation.</a></b> In proceedings of the 35th IEEE International Conference on Software Maintenance and Evolution (ICSME), Short Papers Track, Cleveland, USA, 30 Sep - 04 Oct 2019.</p>
+							<p><i class="fa-solid fa-users"></i> Allan Mori, Gustavo Vale, Elder Cirilo, and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.1145/3330204.3330252" target="blank"> A Domain-Sensitive Threshold Derivation Method.</a></b> In proceedings of the Brazilian Symposium on Information Systems (SBSI), Aracaju, 20 - 24 May 2019.</p>
+							<p><i class="fa-solid fa-users"></i> Mauricio Souza, Renata Moreira, and Eduardo Figueiredo.<b><a href="https://doi.org/10.1145/3350768.3352457" target="blank"> Students Perception on the Use of Project-Based Learning in Software Engineering Education.</a></b> In proceedings of the Brazilian Symposium on Software Engineering (SBES), Education Track, Salvador, 23-27 September 2019.</p>
+							<p><i class="fa-solid fa-users"></i> Hoyama Santos, Vinicius Durelli, Mauricio Souza, Eduardo Figueiredo, Lucas Silva, and Rafael Durelli.<b><a href="https://doi.org/10.1145/3350768.3352490" target="blank"> CleanGame: Gamifying the Identification of Code Smells.</a></b> In proceedings of the Brazilian Symposium on Software Engineering (SBES), Education Track, Salvador, 23-27 September 2019.</p>
+							<p><i class="fa-solid fa-users"></i> Johnatan Oliveira, Markos Viggiato, and Eduardo Figueiredo.<b><a href="https://doi.org/10.1145/3364641.3364648" target="blank"> How Well Do You Know This Library? Mining Experts from Source Code Analysis.</a></b> In proceedings of the Brazilian Symposium on Software Quality (SBQS), Fortaleza, 28 October - 1 November 2019.</p>
+							<p><i class="fa-solid fa-users"></i> Danilo Favato, Daniel Ishitani, Johnatan Oliveira, Eduardo Figueiredo.<b><a href="https://doi.org/10.1145/3364641.3364650" target="blank">  Linus's Law: More Eyes Fewer Flaws in Open Source Projects.</a></b> In proceedings of the Brazilian Symposium on Software Quality (SBQS), Fortaleza, 28 October - 1 November 2019.</p>
+							<p><i class="fa-solid fa-school"></i> Mauricio Souza, Renata Moreira, and Eduardo Figueiredo.<b><a href="https://doi.org/10.5753/wei.2019.6618" target="blank"> Playing the Project: Incorporating Gamification into PBL Approaches for Software Engineering Education.</a></b> In proceedings of the 27th Brazilian Workshop on Computing Education (WEI), Belem, 14-18 July 2019.</p>
+							<p><i class="fa-solid fa-school"></i> Amanda Santana and Eduardo Figueiredo.<b><a href="https://doi.org/10.5753/cbsoft_estendido.2019.7653" target="blank"> On the Impact of Bad Smell Agglomerations on Software Quality.</a></b> In proceedings of the Master and PhD Workshop on Software Engineering (WTDSoft), co-allocated with CBSoft. Salvador, 23 - 27 September 2019.</p>
+						</div>
+					</div>
+					<div class="accordion">
+						<h2><div class="accordion-header"><b>2018</b></div></h2>
+						<div class="accordion-content">
+							<p><i class="fa-solid fa-newspaper"></i> Mauricio Souza, Lucas Veado, Renata Moreira, Eduardo Figueiredo, and Heitor Costa.<b><a href="https://doi.org/10.1016/j.infsof.2017.09.014" target="blank"> A Systematic Mapping Study on Game-related Methods for Software Engineering Education.</a></b> Information and Software Technology (IST), v. 95, pp. 201-218, 2018.</p>
+							<p><i class="fa-solid fa-users"></i> Allan Mori, Gustavo Vale, Markos Viggiato, Johnatan Oliveira, Eduardo Figueiredo, Elder Cirilo, Pooyan Jamshidi and Christian Kastner.<b><a href="http://dx.doi.org/10.1145/3194164.3194173" target="blank"> Evaluating Domain-Specific Metric Thresholds: An Empirical Study.</a></b> In proceedings of the 1st International Conference on Technical Debt (TechDebt), Gothenburg, Sweden, 27 - 28 May 2018.</p>
+							<p><i class="fa-solid fa-users"></i> Juliana Pereira, Sandro Schulze, Eduardo Figueiredo, Gunter Saake.<b><a href="https://doi.org/10.1145/3233027.3233039" target="blank"> N-dimensional Tensor Factorization for Self-Configuration of Software Product Lines at Runtime.</a></b> In proceedings of the 22nd Systems and Software Product Line Conference (SPLC), Gothenburg, Sweden, 10 - 14 September 2018.</p>
+							<p><i class="fa-solid fa-users"></i> Jabier Martinez, Nicolas Ordonez, Xhevahire Ternava, Tewfik Ziadi, Jairo Aponte, Eduardo Figueiredo, and Marco Tulio Valente.<b><a href="https://hal.sorbonne-universite.fr/hal-01722316/file/argouml-spl-feature%20%281%29.pdf" target="blank"> Feature Location Benchmark with ArgoUML SPL.</a></b> In proceedings of the 22nd Systems and Software Product Line Conference (SPLC), Challenge Track, Case 2, Gothenburg, Sweden, 10 - 14 September 2018.</p>
+							<p><i class="fa-solid fa-users"></i> Adriano Santos, Mauricio Souza, Marcella Dayrell, and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.5220/0006682200890101" target="blank"> Game Elements for Learning Programming: a Mapping Study.</a></b> In proceedings of the 10th International Conference on Computer Supported Education (CSEDU), Funchal, 15 - 17 March 2018.</p>
+							<p><i class="fa-solid fa-users"></i> Johnatan Oliveira, Markos Viggiato, Mateus Santos, Eduardo Figueiredo, and Humberto Marques-Neto.<b><a href="http://dx.doi.org/10.18293/SEKE2018-157" target="blank"> An Empirical Study on the Impact of Android Code Smells on Resource Usage.</a></b> In proceedings of the International Conference on Software Engineering and Knowledge Engineering (SEKE), San Francisco, 1 - 3 July 2018.</p>
+							<p><i class="fa-solid fa-users"></i> Adriano Santos, Mauricio Souza, Marcella Dayrell, and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.1109/FIE.2018.8658505" target="blank"> Exploring Game Elements in Learning Programming: An Empirical Evaluation.</a></b> In proceedings of the 48th IEEE Frontiers in Education Conference (FIE), San Jose, 3 - 6 October 2018.</p>
+							<p><i class="fa-solid fa-users"></i> Pedro Rodrigues, Mauricio Souza, and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.1109/FIE.2018.8658524" target="blank"> Games and Gamification in Software Engineering Education: A Survey with Educators.</a></b> In proceedings of the 48th IEEE Frontiers in Education Conference (FIE), San Jose, 3 - 6 October 2018.</p>
+							<p><i class="fa-solid fa-users"></i> Adriano Santos, Mauricio Souza, Johnatan Oliveira, and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.1145/3267183.3267192" target="blank"> Mining Software Repositories to Identify Library Experts.</a></b> In proceedings of the 12th Brazilian Symposium on Software Components, Architectures, and Reuse (SBCARS), Sao Carlos, 17 - 21 September 2018.</p>
+							<p><i class="fa-solid fa-users"></i> Allan Mori, Elder Cirilo, and Eduardo Figueiredo.<b><a href="#" target="blank"> TWarning: A Warning Tool for Domain-Sensitive Thresholds.</a></b> In proceedings of the Brazilian Conference on Software (CBSoft), Tools Session. Sao Carlos, 17 - 21 September 2018.</p>
+							<p><i class="fa-solid fa-users"></i> Markos Viggiato, Ricardo Terra, Henrique Rocha, Marco Tulio Valente, and Eduardo Figueiredo.<b><a href="https://doi.org/10.48550/arXiv.1808.04836" target="blank"> Microservices in Practice: A Survey Study.</a></b> In proceedings of the 6th Workshop on Software Visualization, Evolution and Maintenance (VEM), co-allocated with CBSoft. Sao Carlos, 2018.</p>
+							<p><i class="fa-solid fa-users"></i> Markos Viggiato and Eduardo Figueiredo.<b><a href="#" target="blank"> On the Investigation of Development Practices in Software Domains.</a></b> In proceedings of the Master and PhD Workshop on Software Engineering (WTDSoft), co-allocated with CBSoft. Sao Carlos, 17 - 21 September 2018.</p>
+							<p><i class="fa-solid fa-language"></i> Cleiton Tavares, Fischer Ferreira, Eduardo Figueiredo.<b><a href="https://doi.org/10.1145/3229345.3229357" target="blank"> Um Mapeamento Sistemático da Literatura sobre Ferramentas de Refatoração de Software.</a></b> Anais do Simpï¿½sio Brasileiro de Sistemas de Informaï¿½ï¿½o (SBSI). Caxias do Sul, 2018.</p>
+						</div>
+					</div>
+					<div class="accordion">
+						<h2><div class="accordion-header"><b>2017</b></div></h2>
+						<div class="accordion-content">
+							<p><i class="fa-solid fa-newspaper"></i> Juliana Pereira, Lucas Maciel, Thiago Noronha, and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.1111/itor.12414" target="blank"> Heuristic and Exact Algorithms for Product Configuration in Software Product Lines.</a></b> International Transactions in Operational Research (ITOR), Volume 24, Issue 6, pp. 1285-1306, November 2017.</p>
+							<p><i class="fa-solid fa-newspaper"></i> Juliana Pereira, Kattiana Constantino, Eduardo Figueiredo, and Gunter Saake.<b><a href="http://dx.doi.org/10.1007/978-3-319-56390-9_4" target="blank"> Quantitative and Qualitative Empirical Analysis of Three Feature Modeling Tools.</a></b> Communications in Computer and Information Science (CCIS), Volume 703, pp. 66-88, 2017.</p>
+							<p><i class="fa-solid fa-newspaper"></i> Thanis Paiva, Amanda Damasceno, Eduardo Figueiredo, Claudio Sant'Anna.<b><a href="https://doi.org/10.1186/s40411-017-0041-1" target="blank">  On the Evaluation of Code Smells and Detection Tools.</a></b> Journal of Software Engineering Research and Development (JSERD), 2017.</p>
+							<p><i class="fa-solid fa-newspaper"></i> Johnatan Oliveira, Eduardo Fernandes, Mauricio Souza, Eduardo Figueiredo.<b><a href="https://doi.org/10.5753/isys.2017.330" target="blank"> A Method Based on Naming Similarity to Identify Reuse Opportunities.</a></b> Brazilian Journal of Information Systems (iSys), v. 10, n. 1, 2017.</p>
+							<p><i class="fa-solid fa-newspaper"></i> Markos Viggiato, Johnatan Oliveira, Cleiton Tavares, Eduardo Figueiredo.<b><a href="https://infocomp.dcc.ufla.br/index.php/infocomp/article/view/556/494" target="blank"> On the Investigation of Domain-Sensitive Bad Smells in Information Systems.</a></b> INFOCOMP, 2017.</p>
+							<p><i class="fa-solid fa-users"></i> Eduardo Fernandes, Gustavo Vale, Leonardo Sousa, Eduardo Figueiredo, Alessandro Garcia, and Jaejoon Lee.<b><a href="https://doi.org/10.1007/978-3-319-56856-0_4" target="blank"> No Code Anomaly is an Island Anomaly Agglomeration as Sign of Product Line Instabilities.</a></b> In proceedings of the 16th International Conference on Software Reuse (ICSR), pp. 48-64, Salvador, 29 - 31 May 2017.</p>
+							<p><i class="fa-solid fa-users"></i> Mauricio Souza, Lucas Veado, Renata Moreira, Eduardo Figueiredo, and Heitor Xavier.<b><a href="https://doi.org/10.1109/ICSE-SEET.2017.17" target="blank"> Games for Learning: Bridging Game-Related Education Methods to Software Engineering Knowledge Areas.</a></b> In proceedings of the 39th International Conference on Software Engineering (ICSE), Software Engineering Education and Training track, pp. 170-179, Buenos Aires, 20 - 28 May 2017.</p>
+							<p><i class="fa-solid fa-school"></i> Joao Diniz, Gustavo Vale, Felipe Gaia, and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.1109/VACE.2017.7" target="blank"> Evaluating Delta-Oriented Programming for Evolving Software Product Lines.</a></b> In proceedings of the 2nd International Workshop on Variability and Complexity in Software Design (VACE), co-allocated with ICSE, pp. 27-33. Buenos Aires, 2017.</p>
+							<p><i class="fa-solid fa-school"></i> Guilherme Assis, Gustavo Vale, and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.1145/3141848.3141851" target="blank"> Feature Oriented Programming in Groovy.</a></b> In proceedings of the 8th International Workshop on Feature-Oriented Software Development (FOSD), co-allocated with SPLASH, pp. 21-30. Vancouver, 2017.</p>
+							<p><i class="fa-solid fa-school"></i> Allan Mori, Elder Cirilo, and Eduardo Figueiredo.<b><a href="#" target="blank"> Measuring and Comparing Quality Attributes of Software Development Communities.</a></b> In proceedings of the Master and PhD Workshop on Software Engineering (WTDSoft), co-allocated with CBSoft. Fortaleza, 2017.</p>
+						</div>
+					</div>
+					<div class="accordion">
+						<h2><div class="accordion-header"><b>2016</b></div></h2>
+						<div class="accordion-content">
+							<p><i class="fa-solid fa-newspaper"></i> Adriano Santos, Pericles Alves, Eduardo Figueiredo, and Fabiano Ferrari.<b><a href="http://dx.doi.org/10.1016/j.scico.2015.12.003" target="blank"> Avoiding Code Pitfalls in Aspect-Oriented Programming.</a></b> Science of Computer Programming (SCP), vol. 119, pp. 31ï¿½50, 2016.</p>
+							<p><i class="fa-solid fa-users"></i> Eduardo Fernandes, Johnatan Oliveira, Gustavo Vale, Thanis Paiva, and Eduardo Figueiredo.<b><a href="https://homepages.dcc.ufmg.br/~figueiredo/publications/ease16submitted.pdf" target="blank"> A Review-based Comparative Study of Bad Smell Detection Tools.</a></b> In proceedings of the 20th International Conference on Evaluation and Assessment in Software Engineering (EASE). Limerick, 1 - 3 June 2016. [ Acceptance rate: 23 % ]</p>
+							<p><i class="fa-solid fa-users"></i> Kattiana Constantino, Juliana Pereira, Juliana Padilha, Priscilla Vasconcelos, and Eduardo Figueiredo.<b><a href="https://homepages.dcc.ufmg.br/~figueiredo/publications/enase16ready.pdf" target="blank"> An Empirical Study of Two Software Product Line Tools.</a></b> In proceedings of the International Conference on Evaluation of Novel Approaches to Software Engineering (ENASE). Rome, 27 - 28 April 2016.</p>
+							<p><i class="fa-solid fa-users"></i> Eduardo Fernandes, Johnatan Oliveira, and Eduardo Figueiredo.<b><a href="https://homepages.dcc.ufmg.br/~figueiredo/publications/fie16ready.pdf" target="blank"> Investigating How Features of Online Learning Support Software Process Education.</a></b> In proceedings of the 46th Frontiers in Education Conference (FIE). Erie, 12 - 15 October 2016.</p>
+							<p><i class="fa-solid fa-users"></i> Lucas Veado, Gustavo Vale, Eduardo Fernandes, and Eduardo Figueiredo.<b><a href="http://dx.doi.org/10.1145/2915970.2916014" target="blank"> TDTool: Threshold Derivation Tool.</a></b> In proceedings of the 20th International Conference on Evaluation and Assessment in Software Engineering (EASE), Tools Session. Limerick, 1 - 3 June 2016.</p>
+							<p><i class="fa-solid fa-users"></i> Gustavo Vale, Ramon Abilio, Juliana Pereira, Eduardo Figueiredo, Paulo Afonso, and Heitor Costa.<b><a href="https://wwwiti.cs.uni-magdeburg.de/iti_db/publikationen/ps/auto/ValeAP+16.pdf" target="blank"> Identification and Relationship Between Notation and Tool for Feature Models with Graphic Representation.</a></b> In proceedings of the International Conference of the Chilean Computer Science Society (SCCC). Valparaiso, Chile, 2016.</p>
+							<p><i class="fa-solid fa-users"></i> Johnatan Oliveira, Eduardo Fernandes, Mauricio Souza, and Eduardo Figueiredo.<b><a href="https://sol.sbc.org.br/index.php/sbsi/article/download/5976/5874/" target="blank"> A Method Based on Naming Similarity to Identify Reuse Opportunities.</a></b> In proceedings of the Brazilian Symposium on Information Systems (SBSI). Florianopolis, SC, 17 - 20 May 2016.</p>
+							<p><i class="fa-solid fa-users"></i> Kattiana Constantino, Eduardo Figueiredo, Glauco Carneiro, and Raquel Minardi.<b><a href="https://doi.org/10.5753/sbsi.2016.59685874/" target="blank"> Multiple View Interactive Environment to Analyze Software Product Line Tools.</a></b> In proceedings of the Brazilian Symposium on Information Systems (SBSI). Florianopolis, SC, 17 - 20 May 2016.</p>
+							<p><i class="fa-solid fa-users"></i> Eduardo Fernandes, Fischer Ferreira, Joao Antonio Netto, and Eduardo Figueiredo.<b><a href="https://doi.org/10.5753/sbsi.2016.5998/" target="blank"> Information Systems Development with Pair Programming: An Academic Quasi-Experiment.</a></b> In proceedings of the Brazilian Symposium on Information Systems (SBSI). Florianopolis, SC, 17 - 20 May 2016.</p>
+							<p><i class="fa-solid fa-school"></i> Ramon Abilio, Gustavo Vale, Eduardo Figueiredo, and Heitor Costa.<b><a href="https://homepages.dcc.ufmg.br/~figueiredo/publications/wetsom16ready.pdf/" target="blank"> Metrics for Feature-Oriented Programming.</a></b> In proceedings of the 7th International Workshop on Emerging Trends in Software Metrics (WETSoM), co-allocated with ICSE. Austin, TX, 2016.</p>
+							<p><i class="fa-solid fa-school"></i> Alexandre Paiva, Johnatan Oliveira, and Eduardo Figueiredo.<b><a href="https://homepages.dcc.ufmg.br/~figueiredo/publications/vem16ready.pdf/" target="blank"> Dolly or Shaun? A Survey to Verify Code Clones Detected using Similar Sequences of Method Calls.</a></b> In proceedings of the Workshop on Software Visualization, Evolution, and Maintenance (VEM), co-allocated with CBSoft. Maringa, PR, 19 - 23 September 2016.</p>
+							<p><i class="fa-solid fa-school"></i> Eduardo Fernandes and Eduardo Figueiredo.<b><a href="https://www.researchgate.net/publication/317542923_Detecting_Code_Anomalies_in_Software_Product_Lines/" target="blank"> Detecting Code Anomalies in Software Product Lines.</a></b> In proceedings of the Master and PhD Workshop on Software Engineering (WTDSoft), co-allocated with CBSoft. Maringa, PR, 19 - 23 September 2016.</p>
+							<p><i class="fa-solid fa-school"></i> Johnatan Oliveira and Eduardo Figueiredo.<b><a href="#" target="blank"> A Recommendation System of Reuse Opportunities based on Lexical Analysis.</a></b> In proceedings of the Master and PhD Workshop on Information Systems (WTDSI), co-allocated with SBSI. Florianopolis, SC, 17 - 20 May 2016.</p>
+							<p><i class="fa-solid fa-language"></i> Marina Santos, Mauricio Souza, Eduardo Figueiredo.<b><a href="https://sol.sbc.org.br/index.php/washes/article/view/6221/6119/" target="blank"> Padrões de Projeto em Java: Um Estudo Prático sobre a Utilização e Benefícios.</a></b> In proceedings of the Workshop sobre Aspectos Sociais, Humanos e Econï¿½micos de Software (WASHES), co-allocated with SBQS. Maceio, 2016.</p>
+							<p><i class="fa-solid fa-language"></i> Markos Viggiato, Johnatan Oliveira, Eduardo Figueiredo.<b><a href="https://www.researchgate.net/publication/309429961_Configuracao_de_Produtos_em_Linha_de_Produtos_de_Software/" target="blank"> Configuração de Produtos em Linha de Produtos de Software.</a></b> In proceedings of the Simpósio Mineiro de Sistemas de Informação (SMSI). Belo Horizonte, 31/08 a 01/09, 2016.</p>
+						</div>
+					</div>
+					<hr class="major" /> </section>
 			</div>
+		</div>
+		<!-- Sidebar -->
+		<div id="sidebar">
+			<div class="inner">
+				<!-- Menu -->
+				<nav id="menu">
+					<header class="major">
+						<h2>Menu</h2> </header>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="members.html">Members</a></li>
+						<li><a href="seminars/">Seminars</a></li>
+						<li><a href="publications.html">Publications</a></li>
+						<!--li><a href="elements.html">Laboratory</a></li--></ul>
+				</nav>
+				<!-- Section -->
+				<section>
+					<header class="major">
+						<h2>Get in touch</h2> </header>
+					<ul class="contact">
+						<li class="icon solid fa-envelope"><a href="#">labsoft@dcc.ufmg.br</a></li>
+						<li class="icon solid fa-phone">+55 31 3409-1474
+							<br /> +55 31 3409-1475 </li>
+						<li class="icon solid fa-home"> Room 2313, Department of Computer Science (DCC), Federal University of Minas Gerais (UFMG).
+							<br> Antonio Carlos Avenue, 6627, Pampulha, Belo Horizonte, Minas Gerais, Brazil.
+							<br> </li>
+					</ul>
+				</section>
+			</div>
+		</div>
+	</div>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		const accordions = document.querySelectorAll('.accordion');
+		accordions.forEach(accordion => {
+			const header = accordion.querySelector('.accordion-header');
+			header.addEventListener('click', () => {
+				accordion.classList.toggle('active');
+			});
+		});
+	});
+	</script>
+</body>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script>
-			  document.addEventListener('DOMContentLoaded', function() {
-			        const accordions = document.querySelectorAll('.accordion');
-
-			        accordions.forEach(accordion => {
-			            const header = accordion.querySelector('.accordion-header');
-
-			            header.addEventListener('click', () => {
-			                accordion.classList.toggle('active');
-			            });
-			        });
-			    });
-			</script>
-	</body>
 </html>
